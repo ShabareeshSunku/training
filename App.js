@@ -1,29 +1,40 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
-
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, View} from 'react-native';
+import Card from './src/Card'
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-  android:
-    'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
-
-type Props = {};
-export default class App extends Component<Props> {
+export default class App extends Component {
+  constructor(){
+    super()
+    this.state = {
+      time : new Date(),
+     date : ''
+    }
+  }
+  componentWillMount = () => {
+    console.log('componentWillMount')
+  };
+  
+  componentDidMount(){
+    console.log('componentDidMount')
+    // this.timer = setInterval(()=>{
+    //   let time = new Date()
+    //   this.setState({time : time})
+    // }, 1000)
+  }
+  componentWillReceiveProps(){
+    console.log('componentWillReceiveProps')
+  }
+  componentWillUpdate = (nextProps, nextState) => {
+    console.log('componentWillUpdate')
+  };
+  componentDidUpdate = (prevProps, prevState) => {
+    console.log('componentDidUpdate')
+  };
+  
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
+        <Card />
       </View>
     );
   }
