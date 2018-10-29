@@ -6,22 +6,22 @@ export default class Card extends Component {
         super()
     }
 
-    // componentWillMount(){
-    //     console.log('componentWillMount')
-    // }
+    componentWillMount(){
+        console.log('componentWillMount')
+    }
 
-    // componentDidMount(){
-    //     console.log('componentDidMount')
-    // }
-    // componentWillReceiveProps(nextProps){
-    //   console.log('componentWillReceiveProps')
-    // }
-    // componentWillUpdate(nextProps, nextState){
-    //   console.log('componentWillUpdate')
-    // }
-    // componentWillUnmount(){
-    //     console.log('componentWillUnmount')
-    // }
+    componentDidMount(){
+        console.log('componentDidMount')
+    }
+    componentWillReceiveProps(nextProps){
+      console.log('componentWillReceiveProps')
+    }
+    componentWillUpdate(nextProps, nextState){
+      console.log('componentWillUpdate')
+    }
+    componentWillUnmount(){
+        console.log('componentWillUnmount')
+    }
     render(){
         const { time='' } = this.props
         console.log('render')
