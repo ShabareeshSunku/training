@@ -1,6 +1,25 @@
-import React, { Component } from 'react';
-import { View, Text, TextInput, StyleSheet, TouchableOpacity, ScrollView, KeyboardAvoidingView } from 'react-native';
+import React, { Component } from 'react'
+import {
+    View,
+    Text,
+    TextInput,
+    StyleSheet,
+    TouchableOpacity,
+    ScrollView,
+    KeyboardAvoidingView,
+    Picker,
+    TimePickerAndroid
+} from 'react-native'
+const types = ['Shopping', 'Medical', 'Food', 'Travel', 'Workout', 'Others']
 
+function formatTime(hours, mins) {
+    let h = (hours % 12) || 12
+    let m = (mins < 10) ? ("0" + mins) : mins
+    h = (h < 10) ? ("0" + h) : h  // leading 0 at the left for 1 digit hours
+    let ampm = hours < 12 ? " AM" : " PM"
+    ts = `${h}:${m}${ampm}`
+    return ts
+}
 export default class AddItem extends Component {
     constructor() {
         super()
@@ -20,6 +39,18 @@ export default class AddItem extends Component {
             type: type
         }
         this.props.onSave(item)
+    }
+    pickTime = async () => {
+        try {
+            const { action, hour, minute } = await TimePickerAndroid.open({
+                is24Hour: false, // Will display '2 PM'
+            })
+            if (action !== TimePickerAndroid.dismissedAction) {
+                this.setState({ time: formatTime(hour, minute) })
+            }
+        } catch ({ code, message }) {
+            console.warn('Cannot open time picker', message)
+        }
     }
     render() {
         return (
@@ -49,16 +80,25 @@ export default class AddItem extends Component {
                         <TextInput
                             style={styles.input}
                             value={this.state.time}
-                            onChangeText={(text) => this.setState({ time: text })}
+                            //editable={false}
+                            //onChangeText={(text) => this.setState({ time: text })}
+                            onFocus={this.pickTime}
                         />
                     </View>
                     <View style={styles.item}>
                         <Text style={styles.label}>Type</Text>
-                        <TextInput
+                        <Picker
+                            selectedValue={this.state.type}
                             style={styles.input}
-                            value={this.state.type}
-                            onChangeText={(text) => this.setState({ type: text })}
-                        />
+                            mode="dropdown"
+                            prompt="Choose Type"
+                            onValueChange={(itemValue, itemIndex) => this.setState({ type: itemValue })}>
+                            {
+                                types.map((item, index) => {
+                                    return <Picker.Item label={item} value={item.toLowerCase()} key={index} />
+                                })
+                            }
+                        </Picker>
                     </View>
                     <View style={[styles.item, styles.actionContainer]}>
                         <TouchableOpacity

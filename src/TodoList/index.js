@@ -37,6 +37,7 @@ export default class TodoList extends Component {
     onSave = (item = {}) => {
         const itemsNew = this.state.items
         if (item.task) {
+            item.id = new Date().valueOf()
             itemsNew.push(item)
             try {
                 AsyncStorage.setItem('todolist', JSON.stringify(itemsNew));
