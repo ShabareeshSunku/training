@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, StyleSheet, Text } from 'react-native'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
-
+import Action from './ActionButton'
 const iconColorMap = {
     sport: {
         color: '#9C27B0',
@@ -21,20 +21,47 @@ const iconColorMap = {
     }
 }
 export default class Item extends Component {
+    onComplete = () => {
+        const { item = {} } = this.props
+        this.props.onComplete(item.id)
+    }
     render() {
         const { item = {} } = this.props
         const iconColor = iconColorMap[item.type] || {}
         return (
             <View style={styles.container}>
-                <View style={[styles.iconContainer, { backgroundColor: iconColor.color || '#FF5722' }]}>
+                <View style={[styles.iconContainer, { backgroundColor: iconColor.color || '#4CAF50' }]}>
                     <Icon name={iconColor.icon || 'rocket'} size={40} color="#FFF" />
                 </View>
-                <View style={styles.textContainer}>
-                    <Text style={styles.heading}>{item.task}</Text>
-                    <Text style={styles.description}>{item.venue}</Text>
-                </View>
-                <View style={styles.timeContainer}>
-                    <Text style={styles.description}>{item.time}</Text>
+                <View style={{ flex: 8 }}>
+                    <View style={{ flex: 1, flexDirection: 'row' }}>
+                        <View style={styles.textContainer}>
+                            <Text style={styles.heading}>{item.task}</Text>
+                            <Text style={styles.description}>{item.venue}</Text>
+                        </View>
+                        <View style={styles.timeContainer}>
+                            <Text style={styles.description}>{item.time}</Text>
+                        </View>
+                    </View>
+                    <View style={{ flex: 1 }}>
+                        <View style={styles.actionRow}>
+                            <Action
+                                name="check-decagram"
+                                highlight={item.completed || false}
+                                action={this.onComplete}
+                            />
+                            <Action
+                                name="lead-pencil"
+                                highlight={false}
+                                action={() => { }}
+                            />
+                            <Action
+                                name="delete-forever"
+                                highlight={false}
+                                action={() => { }}
+                            />
+                        </View>
+                    </View>
                 </View>
             </View>
         )
@@ -56,11 +83,11 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     textContainer: {
-        flex: 6,
+        flex: 0.7,
         padding: 16
     },
     timeContainer: {
-        flex: 2,
+        flex: 0.3,
         justifyContent: 'center',
         alignItems: 'center'
     },
@@ -73,5 +100,11 @@ const styles = StyleSheet.create({
         fontSize: 14,
         fontFamily: 'sans-serif-regular',
         color: '#666'
+    },
+    actionRow: {
+        flex: 1,
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'flex-end'
     }
 })

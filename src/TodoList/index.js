@@ -1,5 +1,12 @@
 import React, { Component } from 'react'
-import { View, StyleSheet, ScrollView, Modal, TouchableOpacity, AsyncStorage } from 'react-native'
+import {
+    View,
+    StyleSheet,
+    ScrollView,
+    Modal,
+    TouchableOpacity,
+    AsyncStorage
+} from 'react-native'
 import Item from './Item'
 import AddItem from './AddItem'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
@@ -20,7 +27,7 @@ export default class TodoList extends Component {
                 } catch (err) {
 
                 }
-                
+
             }
         })
     }
@@ -34,10 +41,27 @@ export default class TodoList extends Component {
             displayModal: false
         })
     }
+    onComplete = (id = '') => {
+        if (id) {
+            let itemsUpdated = this.state.items
+            itemsUpdated.map((item) => {
+                if (item.id == id) {
+                    item.completed = true
+                }
+            })
+            try {
+                AsyncStorage.setItem('todolist', JSON.stringify(itemsUpdated));
+            } catch (error) {
+                // Error saving data
+            }
+            this.setState({ items: itemsUpdated })
+        }
+    }
     onSave = (item = {}) => {
         const itemsNew = this.state.items
         if (item.task) {
             item.id = new Date().valueOf()
+            item.completed = false
             itemsNew.push(item)
             try {
                 AsyncStorage.setItem('todolist', JSON.stringify(itemsNew));
@@ -50,6 +74,13 @@ export default class TodoList extends Component {
             })
         }
     }
+    _renderItem = ({ item = {} }) => {
+        return (
+            <Item
+                item={item}
+                onComplete={this.onComplete} />
+        )
+    }
     render() {
         const { items = [], displayModal = false } = this.state
         return (
@@ -57,19 +88,19 @@ export default class TodoList extends Component {
                 <ScrollView style={styles.container}>
                     {
                         items.map((item, index) => {
-                            return <Item item={item} key={index} />
+                            return <Item item={item} key={index} onComplete={this.onComplete} />
                         })
                     }
-                    <Modal
-                        transparent={true}
-                        animationType="slide"
-                        visible={displayModal}
-                        onRequestClose={() => { }}>
-                        <View style={[styles.container, { padding: 20, backgroundColor: 'rgba(0,0,0,0.6)' }]}>
-                            <AddItem onCancel={this.hideModal} onSave={this.onSave} />
-                        </View>
-                    </Modal>
                 </ScrollView>
+                <Modal
+                    transparent={true}
+                    animationType="slide"
+                    visible={displayModal}
+                    onRequestClose={() => { }}>
+                    <View style={[styles.container, { padding: 20, backgroundColor: 'rgba(0,0,0,0.6)' }]}>
+                        <AddItem onCancel={this.hideModal} onSave={this.onSave} />
+                    </View>
+                </Modal>
                 <TouchableOpacity style={styles.addButton} onPress={this.showModal}>
                     <Icon name="plus" color="#FFF" size={35} />
                 </TouchableOpacity>
