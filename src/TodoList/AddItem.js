@@ -27,37 +27,69 @@ export default class AddItem extends Component {
             task: '',
             venue: '',
             time: '',
-            type: ''
+            type: '',
+            id: '',
+            hour: 0,
+            minute: 0
         }
     }
+    componentDidMount() {
+        const { actionType = '', selectedItem: item = {} } = this.props
+        if (actionType == 'edit') {
+            this.setState({
+                id: item.id,
+                task: item.task,
+                venue: item.venue,
+                time: item.time,
+                type: item.type,
+                hour: item.hour,
+                minute: item.minute
+            })
+        }
+    }
+
     onSave = () => {
-        const { task = '', venue = '', time = '', type = '' } = this.state
+        const { task = '', venue = '', time = '', type = '', id = '', hour = 0, minute = 0 } = this.state
+        const { actionType = '' } = this.props
         const item = {
             task: task,
             venue: venue,
             time: time,
-            type: type
+            type: type,
+            id: id,
+            hour: hour,
+            minute: minute
         }
-        this.props.onSave(item)
+        this.props.onSave(item, actionType)
     }
     pickTime = async () => {
+        let options = {
+            is24Hour: true
+        }
+        const { actionType = '' } = this.props
+        if (actionType == 'edit') {
+            const { hour: prevHour = 0, minute: prevMinute = 0 } = this.state
+            options.hour = prevHour
+            options.minute = prevMinute
+        }
         try {
-            const { action, hour, minute } = await TimePickerAndroid.open({
-                is24Hour: false, // Will display '2 PM'
-            })
+            const { action, hour, minute } = await TimePickerAndroid.open(options)
             if (action !== TimePickerAndroid.dismissedAction) {
-                this.setState({ time: formatTime(hour, minute) })
+                this.setState({ time: formatTime(hour, minute), hour, minute })
             }
         } catch ({ code, message }) {
             console.warn('Cannot open time picker', message)
         }
     }
     render() {
+        const { actionType = '' } = this.props
         return (
             <ScrollView style={styles.container}>
                 <KeyboardAvoidingView>
                     <View style={[styles.item, { alignItems: 'center' }]}>
-                        <Text style={styles.heading}>Add Task</Text>
+                        <Text style={styles.heading}>
+                            {actionType == 'edit' ? 'Update Task' : 'Add Task'}
+                        </Text>
                     </View>
                     <View style={styles.item}>
                         <Text style={styles.label}>Task</Text>
@@ -107,7 +139,7 @@ export default class AddItem extends Component {
                             <Text style={styles.buttonText}>Cancel</Text>
                         </TouchableOpacity>
                         <TouchableOpacity style={styles.button} onPress={this.onSave}>
-                            <Text style={styles.buttonText}>Save</Text>
+                            <Text style={styles.buttonText}>{actionType == 'edit' ? 'Update' : 'Save'}</Text>
                         </TouchableOpacity>
                     </View>
                 </KeyboardAvoidingView>

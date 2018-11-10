@@ -15,7 +15,9 @@ export default class TodoList extends Component {
         super()
         this.state = {
             items: [],
-            displayModal: false
+            displayModal: false,
+            selectedItem: {},
+            actionType: ''
         }
     }
     componentDidMount() {
@@ -38,7 +40,9 @@ export default class TodoList extends Component {
     }
     hideModal = () => {
         this.setState({
-            displayModal: false
+            displayModal: false,
+            selectedItem: {},
+            actionType: ''
         })
     }
     onComplete = (id = '') => {
@@ -57,12 +61,57 @@ export default class TodoList extends Component {
             this.setState({ items: itemsUpdated })
         }
     }
-    onSave = (item = {}) => {
-        const itemsNew = this.state.items
+    onDelete = (id = '') => {
+        if (id) {
+            let itemsAvailable = this.state.items
+            let itemsUpdated = []
+            for (let i = 0; i < itemsAvailable.length; i++) {
+                let item = itemsAvailable[i]
+                if (item.id !== id) {
+                    itemsUpdated.push(item)
+                }
+            }
+            try {
+                AsyncStorage.setItem('todolist', JSON.stringify(itemsUpdated));
+            } catch (error) {
+                // Error saving data
+            }
+            this.setState({ items: itemsUpdated })
+        }
+    }
+    onEditPress = (id = '') => {
+        if (id) {
+            let allItems = this.state.items
+            let selectedItem = {}
+            for (let i = 0; i < allItems.length; i++) {
+                let item = allItems[i]
+                if (item.id == id) {
+                    selectedItem = item
+                }
+            }
+            this.setState({
+                selectedItem: selectedItem,
+                displayModal: true,
+                actionType: 'edit'
+            })
+        }
+    }
+    onSave = (item = {}, actionType = '') => {
+        let itemsNew = this.state.items
         if (item.task) {
-            item.id = new Date().valueOf()
-            item.completed = false
-            itemsNew.push(item)
+            if (actionType == 'edit') {
+                itemsNew = itemsNew.map((ithItem = {}) => {
+                    if (ithItem.id == item.id) {
+                        return item
+                    } else {
+                        return ithItem
+                    }
+                })
+            } else {
+                item.id = new Date().valueOf()
+                item.completed = false
+                itemsNew.push(item)
+            }
             try {
                 AsyncStorage.setItem('todolist', JSON.stringify(itemsNew));
             } catch (error) {
@@ -70,25 +119,32 @@ export default class TodoList extends Component {
             }
             this.setState({
                 items: itemsNew,
-                displayModal: false
+                displayModal: false,
+                selectedItem: {},
+                actionType: ''
             })
         }
     }
-    _renderItem = ({ item = {} }) => {
-        return (
-            <Item
-                item={item}
-                onComplete={this.onComplete} />
-        )
-    }
+
     render() {
-        const { items = [], displayModal = false } = this.state
+        const { items = [],
+            displayModal = false,
+            selectedItem = {},
+            actionType = ''
+        } = this.state
         return (
             <View style={styles.container}>
                 <ScrollView style={styles.container}>
                     {
                         items.map((item, index) => {
-                            return <Item item={item} key={index} onComplete={this.onComplete} />
+                            return (
+                                <Item
+                                    item={item}
+                                    key={index}
+                                    onComplete={this.onComplete}
+                                    onDelete={this.onDelete}
+                                    onEdit={this.onEditPress} />
+                            )
                         })
                     }
                 </ScrollView>
@@ -98,7 +154,12 @@ export default class TodoList extends Component {
                     visible={displayModal}
                     onRequestClose={() => { }}>
                     <View style={[styles.container, { padding: 20, backgroundColor: 'rgba(0,0,0,0.6)' }]}>
-                        <AddItem onCancel={this.hideModal} onSave={this.onSave} />
+                        <AddItem
+                            onCancel={this.hideModal}
+                            onSave={this.onSave}
+                            selectedItem={selectedItem}
+                            actionType={actionType}
+                        />
                     </View>
                 </Modal>
                 <TouchableOpacity style={styles.addButton} onPress={this.showModal}>

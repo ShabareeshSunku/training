@@ -25,6 +25,14 @@ export default class Item extends Component {
         const { item = {} } = this.props
         this.props.onComplete(item.id)
     }
+    onDelete = ()=>{
+        const { item = {} } = this.props
+        this.props.onDelete(item.id)
+    }
+    onEdit = ()=>{
+        const { item = {} } = this.props
+        this.props.onEdit(item.id)
+    }
     render() {
         const { item = {} } = this.props
         const iconColor = iconColorMap[item.type] || {}
@@ -53,12 +61,12 @@ export default class Item extends Component {
                             <Action
                                 name="lead-pencil"
                                 highlight={false}
-                                action={() => { }}
+                                action={this.onEdit}
                             />
                             <Action
                                 name="delete-forever"
                                 highlight={false}
-                                action={() => { }}
+                                action={this.onDelete}
                             />
                         </View>
                     </View>
