@@ -18,44 +18,45 @@ const iconColorMap = {
     medical: {
         color: '#4CAF50',
         icon: 'medical-bag'
+    },
+    shopping: {
+        color : '#03A9F4',
+        icon: 'basket'
     }
 }
 export default class Item extends Component {
     onComplete = () => {
-        const { item = {} } = this.props
-        this.props.onComplete(item.id)
+        this.props.onComplete(this.props.id)
     }
-    onDelete = ()=>{
-        const { item = {} } = this.props
-        this.props.onDelete(item.id)
+    onDelete = () => {
+        this.props.onDelete(this.props.id)
     }
-    onEdit = ()=>{
-        const { item = {} } = this.props
-        this.props.onEdit(item.id)
+    onEdit = () => {
+        this.props.onEdit(this.props.id)
     }
     render() {
-        const { item = {} } = this.props
-        const iconColor = iconColorMap[item.type] || {}
+        const { task = '', venue = '', completed = false, time = '', type = '' } = this.props
+        const iconColor = iconColorMap[type] || {}
         return (
             <View style={styles.container}>
-                <View style={[styles.iconContainer, { backgroundColor: iconColor.color || '#4CAF50' }]}>
+                <View style={[styles.iconContainer, { backgroundColor: iconColor.color || '#00BCD4' }]}>
                     <Icon name={iconColor.icon || 'rocket'} size={40} color="#FFF" />
                 </View>
                 <View style={{ flex: 8 }}>
                     <View style={{ flex: 1, flexDirection: 'row' }}>
                         <View style={styles.textContainer}>
-                            <Text style={styles.heading}>{item.task}</Text>
-                            <Text style={styles.description}>{item.venue}</Text>
+                            <Text style={styles.heading}>{task}</Text>
+                            <Text style={styles.description}>{venue}</Text>
                         </View>
                         <View style={styles.timeContainer}>
-                            <Text style={styles.description}>{item.time}</Text>
+                            <Text style={styles.description}>{time}</Text>
                         </View>
                     </View>
                     <View style={{ flex: 1 }}>
                         <View style={styles.actionRow}>
                             <Action
                                 name="check-decagram"
-                                highlight={item.completed || false}
+                                highlight={completed || false}
                                 action={this.onComplete}
                             />
                             <Action

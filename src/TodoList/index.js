@@ -2,10 +2,10 @@ import React, { Component } from 'react'
 import {
     View,
     StyleSheet,
-    ScrollView,
     Modal,
     TouchableOpacity,
-    AsyncStorage
+    AsyncStorage,
+    FlatList
 } from 'react-native'
 import Item from './Item'
 import AddItem from './AddItem'
@@ -47,7 +47,7 @@ export default class TodoList extends Component {
     }
     onComplete = (id = '') => {
         if (id) {
-            let itemsUpdated = this.state.items
+            let itemsUpdated = (this.state.items || []).slice(0)
             itemsUpdated.map((item) => {
                 if (item.id == id) {
                     item.completed = true
@@ -97,7 +97,7 @@ export default class TodoList extends Component {
         }
     }
     onSave = (item = {}, actionType = '') => {
-        let itemsNew = this.state.items
+        let itemsNew = (this.state.items || []).slice(0)
         if (item.task) {
             if (actionType == 'edit') {
                 itemsNew = itemsNew.map((ithItem = {}) => {
@@ -125,7 +125,15 @@ export default class TodoList extends Component {
             })
         }
     }
-
+    _renderItem = ({ item }) => {
+        return (
+            <Item
+                {...item}
+                onComplete={this.onComplete}
+                onDelete={this.onDelete}
+                onEdit={this.onEditPress} />
+        )
+    }
     render() {
         const { items = [],
             displayModal = false,
@@ -134,20 +142,12 @@ export default class TodoList extends Component {
         } = this.state
         return (
             <View style={styles.container}>
-                <ScrollView style={styles.container}>
-                    {
-                        items.map((item, index) => {
-                            return (
-                                <Item
-                                    item={item}
-                                    key={index}
-                                    onComplete={this.onComplete}
-                                    onDelete={this.onDelete}
-                                    onEdit={this.onEditPress} />
-                            )
-                        })
-                    }
-                </ScrollView>
+                <FlatList
+                    data={items}
+                    keyExtractor={(item) => item.id.toString()}
+                    renderItem={this._renderItem}
+                    extraData={items}
+                />
                 <Modal
                     transparent={true}
                     animationType="slide"
