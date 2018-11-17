@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
-import { View, Image, TouchableOpacity, StyleSheet } from 'react-native'
-import { Title, Description, Caption } from '../common/Typography'
+import { View, Image, TouchableOpacity, StyleSheet, Text } from 'react-native'
+import { Title, Description, Caption, SubHeading } from '../common/Typography'
 import Rating from '../common/StarRating'
 export default class BookListItem extends PureComponent {
   render() {
@@ -8,6 +8,7 @@ export default class BookListItem extends PureComponent {
       title = '',
       subtitle = '',
       price = '',
+      listPrice = '',
       authors = [],
       formats = [],
       thumbnail = '',
@@ -22,14 +23,14 @@ export default class BookListItem extends PureComponent {
               <View style={styles.imgContainer}>
                 <Image
                   source={{ uri: thumbnail }}
-                  style={{ height: 160, width: 160 }}
-                  resizeMode="contain" />
+                  style={{ height: 180, width: 117 }}
+                  resizeMode="cover" />
               </View>
             ) : null
           }
 
           <View style={styles.textContainer}>
-            <Title>
+            <Title numberOfLines={2}>
               {title}
             </Title>
             {
@@ -43,6 +44,22 @@ export default class BookListItem extends PureComponent {
                   color="#5367a5"
                   textColor="#5367a5" />
               ) : null
+            }
+            {
+              price ? (
+              <Text>
+                <SubHeading>{price}{' '}</SubHeading>
+                {
+                  listPrice ? <Description style={styles.strikethrough}>
+                    {listPrice}
+                  </Description> : null
+                }
+                {
+                  (price && listPrice && price != listPrice) ? (
+                    <Description color="green">{' '}{Math.floor(listPrice-price)} off</Description>
+                  ) : null
+                }
+              </Text>) : null
             }
             {
               subtitle ? (
@@ -76,16 +93,21 @@ const styles = StyleSheet.create({
   },
   touchable: {
     flex: 1,
-    flexDirection: 'row',
-    padding: 12,
+    flexDirection: 'row'
   },
   imgContainer: {
-    flex: 3,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    padding: 12,
+    paddingRight: 4,
+    overflow: 'hidden',
   },
   textContainer: {
-    flex: 7,
-    paddingLeft: 12
+    flex: 1,
+    padding: 12,
+  },
+  strikethrough: {
+    textDecorationLine: 'line-through',
+    textDecorationStyle: 'solid'
   }
 })

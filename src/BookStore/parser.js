@@ -11,8 +11,8 @@ export default function parseData(items = []) {
             rating: item.volumeInfo && item.volumeInfo.averageRating || 0,
             count: item.volumeInfo && item.volumeInfo.ratingsCount || 0,
             thumbnail: item.volumeInfo && item.volumeInfo.imageLinks && item.volumeInfo.imageLinks.smallThumbnail || '',
-            price: item.saleInfo && item.saleInfo.retailPrice || {},
-            listPrice: item.saleInfo && item.saleInfo.listPrice || {},
+            price: item.saleInfo && item.saleInfo.retailPrice &&  item.saleInfo.retailPrice.amount || '',
+            listPrice: item.saleInfo && item.saleInfo.listPrice && item.saleInfo.listPrice.amount || '',
             id: item.id,
             selfLink : item.selfLink
         })
