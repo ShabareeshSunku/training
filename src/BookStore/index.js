@@ -4,6 +4,9 @@ import BooksListItem from './BooksListItem'
 import parseBooks from './parser'
 import CategoryFilter from './Categories'
 export default class BookStore extends Component {
+    static navigationOptions = {
+        title: 'Book Store'
+    }
     constructor() {
         super()
         this.state = {
@@ -60,7 +63,6 @@ export default class BookStore extends Component {
     loadMore = () => {
         const { query = '', startIndex = 0, totalItems = 0, loadingMore = false } = this.state
         let startIndexNew = startIndex + 10
-        console.log(totalItems, startIndex, loadingMore)
         if (startIndexNew < totalItems && loadingMore == false) {
             this.setState({ loadingMore: true }, () => {
                 this.fetchBooks(query, startIndexNew)
@@ -79,6 +81,9 @@ export default class BookStore extends Component {
         }, () => {
             this.fetchBooks('Best Selling', 0)
         })
+    }
+    itemPressCallback = (item = {}) => {
+        this.props.navigation.navigate('details', item)
     }
     footer = () => {
         const { loadingMore = false } = this.state
@@ -127,6 +132,9 @@ export default class BookStore extends Component {
                                     listPrice={item.listPrice}
                                     price={item.price}
                                     selfLink={item.selfLink}
+                                    id={item.id}
+                                    description={item.description}
+                                    itemPressCallback={this.itemPressCallback}
                                 />)}
                             />
                         )

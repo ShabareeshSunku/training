@@ -3,10 +3,24 @@ import { View, Image, TouchableOpacity, StyleSheet, Text } from 'react-native'
 import { Title, Description, Caption, SubHeading } from '../common/Typography'
 import Rating from '../common/StarRating'
 export default class BookListItem extends PureComponent {
+  onItemPress = () => {
+    const {
+      id = '',
+      selfLink = '',
+      title = '',
+      thumbnail = '',
+      description = '',
+      rating = '',
+      subtitle = '',
+      authors = []
+    } = this.props
+    this.props.itemPressCallback({ id, title, selfLink, thumbnail, description, rating, authors, subtitle })
+  }
   render() {
     const {
       title = '',
       subtitle = '',
+      description = '',
       price = '',
       listPrice = '',
       authors = [],
@@ -15,9 +29,10 @@ export default class BookListItem extends PureComponent {
       rating = 0,
       count = 0
     } = this.props
+    
     return (
       <View style={styles.container}>
-        <TouchableOpacity style={styles.touchable}>
+        <TouchableOpacity style={styles.touchable} onPress={this.onItemPress}>
           {
             thumbnail ? (
               <View style={styles.imgContainer}>
@@ -47,19 +62,19 @@ export default class BookListItem extends PureComponent {
             }
             {
               price ? (
-              <Text>
-                <SubHeading>{price}{' '}</SubHeading>
-                {
-                  listPrice ? <Description style={styles.strikethrough}>
-                    {listPrice}
-                  </Description> : null
-                }
-                {
-                  (price && listPrice && price != listPrice) ? (
-                    <Description color="green">{' '}{Math.floor(listPrice-price)} off</Description>
-                  ) : null
-                }
-              </Text>) : null
+                <Text>
+                  <SubHeading>{price}{' '}</SubHeading>
+                  {
+                    listPrice ? <Description style={styles.strikethrough}>
+                      {listPrice}
+                    </Description> : null
+                  }
+                  {
+                    (price && listPrice && price != listPrice) ? (
+                      <Description color="green">{' '}{Math.floor(listPrice - price)} off</Description>
+                    ) : null
+                  }
+                </Text>) : null
             }
             {
               subtitle ? (
