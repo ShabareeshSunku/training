@@ -1,0 +1,266 @@
+{
+    "status": "ok",
+    "totalResults": 100,
+    "articles": [
+        {
+            "source": {
+                "id": "financial-times",
+                "name": "Financial Times"
+            },
+            "author": null,
+            "title": "Pfizer to raise prices for 41 drugs despite Trump criticism",
+            "description": "Pharmaceutical giant backed down on July increases but will go ahead in January",
+            "url": "https://www.ft.com/content/5ba68b6e-e9df-11e8-885c-e64da4c0f981",
+            "urlToImage": "https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fprod-upp-image-read.ft.com%2F6954f858-e9ea-11e8-94da-a6478f64c783?source=next-opengraph&fit=scale-down&width=900",
+            "publishedAt": "2018-11-17T02:53:05.7134573Z",
+            "content": "Pfizer said it would increase the price of 41 products in its drug portfolio, just four months after having initially put off those plans amid heavy criticism from US President Donald Trump. The drugmaker in July temporarily backed down from raising the price… [+1978 chars]"
+        },
+        {
+            "source": {
+                "id": "google-news-ca",
+                "name": "Google News (Canada)"
+            },
+            "author": "Kathleen Ronayne, Sudhin Thanawala",
+            "title": "California wildfire deaths rise to 71 ahead of Trump’s visit",
+            "description": "The president is expected to get a look at the grief and damage caused by the deadliest U.S. wildfire in a century, and he could face resentment from locals for blaming the inferno on poor forest management in California",
+            "url": "https://www.theglobeandmail.com/world/article-hundreds-of-people-still-missing-in-wake-of-northern-california/",
+            "urlToImage": "https://www.theglobeandmail.com/resizer/2arfPXY3qG_s2c8o8h_6Qz1C_P4=/1200x0/filters:quality(80)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/C7SKYDMI5BBKFJRKQWKHGQHAAU.JPG",
+            "publishedAt": "2018-11-17T02:44:26+00:00",
+            "content": "Travis Lee Hogan comforts his mother, Bridgett Hogan, while they stay at a makeshift evacuation centre for people displaced by the Camp Fire in Chico, Calif., on Nov. 15, 2018. TERRAY SYLVESTER/Reuters With the confirmed death toll at 71 and the list of unacc… [+5955 chars]"
+        },
+        {
+            "source": {
+                "id": "cnn",
+                "name": "CNN"
+            },
+            "author": null,
+            "title": "Trump threatens to leave if reporters act up - CNN Video",
+            "description": "In an interview with Fox News, President Trump says he will \"just leave\" if reporters start \"acting up\" or don't treat him and his White House aides the way he likes during news conferences.",
+            "url": "http://us.cnn.com/videos/business/2018/11/17/donald-trump-reporters-acting-up-leave-fox-intv-sot-ebof-vpx.cnn",
+            "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/181116135019-01-trump-medal-of-freedom-1116-super-tease.jpg",
+            "publishedAt": "2018-11-17T02:38:14.5871434Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "associated-press",
+                "name": "Associated Press"
+            },
+            "author": "KATHLEEN RONAYNE and SUDHIN THANAWALA",
+            "title": "Fire deaths rise to 71 ahead of Trump's California visit",
+            "description": "CHICO, Calif. (AP) — With the confirmed death toll at 71 and the list of unaccounted for people more than 1,000, authorities in Northern California on Friday searched for those who perished and those who survived the fiercest of wildfires ahead of a planned v…",
+            "url": "https://apnews.com/c8c36c0c9e664a90abe812f86a813736",
+            "urlToImage": "",
+            "publishedAt": "2018-11-17T02:38:10Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "associated-press",
+                "name": "Associated Press"
+            },
+            "author": "KATHLEEN RONAYNE and SUDHIN THANAWALA",
+            "title": "Fire deaths rise to 71 ahead of Trump's California visit",
+            "description": "CHICO, Calif. (AP) — With the confirmed death toll at 71 and the list of unaccounted for people more than 1,000, authorities in Northern California on Friday searched for those who perished and those who survived the fiercest of wildfires ahead of a planned v…",
+            "url": "https://apnews.com/c8c36c0c9e664a90abe812f86a813736",
+            "urlToImage": "https://storage.googleapis.com/afs-prod/media/media:253f688fde234ca48b1597fffbfe0bb2/3000.jpeg",
+            "publishedAt": "2018-11-17T02:38:10Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "cnn",
+                "name": "CNN"
+            },
+            "author": null,
+            "title": "Clapper: Trump keeps raising bar for Saudis - CNN Video",
+            "description": "Former Director of National Intelligence James Clapper says it \"stretches credulity\" to think that Saudi Crown Prince Mohammed bin Salman wasn't directly involved in the killing of journalist Jamal Khashoggi.",
+            "url": "http://us.cnn.com/videos/politics/2018/11/17/trump-mohammed-bin-salman-khashoggi-james-clapper-sot-ac-vpx.cnn",
+            "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/181116204651-james-clapper-ac360-11-16-2018-super-tease.jpg",
+            "publishedAt": "2018-11-17T02:08:18.3313167Z",
+            "content": "Chat with us in Facebook Messenger. Find out what's happening in the world as it unfolds."
+        },
+        {
+            "source": {
+                "id": "fox-news",
+                "name": "Fox News"
+            },
+            "author": "Fox News",
+            "title": "Trump accused of racism for honoring Elvis",
+            "description": "President Trump's decision to award the Presidential Medal of Freedom to Elvis Presley draws criticism from a columnist for The Washington Post; reaction from 'The Story' Ladies Night panel.",
+            "url": "https://video.foxnews.com/v/5968168730001/",
+            "urlToImage": "http://a57.foxnews.com/media2.foxnews.com/BrightCove/694940094001/2018/11/17/640/360/694940094001_5968178403001_5968168730001-vs.jpg",
+            "publishedAt": "2018-11-17T02:08:01.628234Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "the-new-york-times",
+                "name": "The New York Times"
+            },
+            "author": null,
+            "title": "How the Trump Administration Stepped Up Pursuit of WikiLeaks’s Assange",
+            "description": "As American spies worked to collect intelligence on Julian Assange, Justice Department prosecutors took steps that resulted in secret charges.",
+            "url": "https://www.nytimes.com/2018/11/16/us/politics/trump-administration-assange-wikileaks.html",
+            "urlToImage": "https://static01.nyt.com/images/2018/11/17/us/politics/17dc-ticktock1/17dc-ticktock1-facebookJumbo.jpg",
+            "publishedAt": "2018-11-17T02:02:11.312Z",
+            "content": "WikiLeaks encouraged Guccifer 2.0, the online persona of the Russian operatives, to provide it with the Democratic documents because it would have a much higher impact, according to court papers. Whether anyone connected with the Trump campaign worked with Mr… [+1822 chars]"
+        },
+        {
+            "source": {
+                "id": "reuters",
+                "name": "Reuters"
+            },
+            "author": "Mark Hosenball",
+            "title": "CIA believes Saudi crown prince ordered journalist's killing: source",
+            "description": "The CIA believes Saudi Crown Prince Mohammed bin Salman ordered the killing of journalist Jamal Khashoggi in Istanbul, sources familiar with the matter said on Friday, complicating President Donald Trump's efforts to preserve ties with a key U.S. ally.",
+            "url": "http://feeds.reuters.com/~r/reuters/topNews/~3/6hZOC-lPxnk/cia-believes-saudi-crown-prince-ordered-journalists-killing-source-idUSKCN1NL2P4",
+            "urlToImage": "https://s2.reutersmedia.net/resources/r/?m=02&d=20181117&t=2&i=1326116795&w=1200&r=LYNXNPEEAF1QF",
+            "publishedAt": "2018-11-17T01:59:41Z",
+            "content": "WASHINGTON (Reuters) - The CIA believes Saudi Crown Prince Mohammed bin Salman ordered the killing of journalist Jamal Khashoggi in Istanbul, sources familiar with the matter said on Friday, complicating President Donald Trump’s efforts to preserve ties with … [+3521 chars]"
+        },
+        {
+            "source": {
+                "id": "rte",
+                "name": "RTE"
+            },
+            "author": "RTÉ News",
+            "title": "Trump completes answers for Mueller investigation",
+            "description": "President Donald Trump said he had \"very easily\" completed his written answers for Special Counsel Robert Mueller's investigation into Russia's alleged interference in the 2016 Presidential election.",
+            "url": "https://www.rte.ie/news/world/2018/1117/1011517-trump-mueller/",
+            "urlToImage": "https://img.rasset.ie/001103f5-1600.jpg",
+            "publishedAt": "2018-11-17T01:42:16Z",
+            "content": "President Donald Trump said he had \"very easily\" completed his written answers for Special Counsel Robert Mueller's investigation into Russia's role in the 2016 Presidential election. But Mr Trump said he had not yet submitted them to Mr Mueller's office. Spe… [+1819 chars]"
+        },
+        {
+            "source": {
+                "id": "the-hill",
+                "name": "The Hill"
+            },
+            "author": "Tal Axelrod",
+            "title": "Trump congratulates Kemp, says Abrams will have 'terrific political future'",
+            "description": "\"Stacey Abrams fought brilliantly and hard - she will have a terrific political future!\" Trump tweets",
+            "url": "http://thehill.com/homenews/campaign/417231-trump-congratulates-kemp-says-abrams-will-have-terrific-political-future",
+            "urlToImage": "https://thehill.com/sites/default/files/staceyabrams_05222018.jpg",
+            "publishedAt": "2018-11-17T01:16:51Z",
+            "content": "President Trump Donald John Trump Avenatti still considering presidential run despite domestic violence arrest Mulvaney positioning himself to be Commerce Secretary: report Kasich: Wouldnt want presidential run to diminish my voice MORE on Friday congratulate… [+4107 chars]"
+        },
+        {
+            "source": {
+                "id": "usa-today",
+                "name": "USA Today"
+            },
+            "author": null,
+            "title": "Did President Trump make a sex joke about the late Supreme Court Justice Antonin Scalia?",
+            "description": "Amid introducing those honored with the Medal of Freedom, President Trump  seemed to include a joke about Supreme Court Justice Antonin Scalia's sex life.",
+            "url": "https://www.usatoday.com/story/news/politics/2018/11/16/president-donald-trump-cracks-sex-joke-antonin-scalia/2029949002/?utm_source=google&utm_medium=amp&utm_campaign=speakable",
+            "urlToImage": "https://www.gannett-cdn.com/presto/2018/11/17/USAT/1e42e6d6-4e9a-4961-bbfb-4add479f257d-EPA_USA_TRUMP_MEDAL_FREEDOM.jpg?crop=4411,2481,x577,y360&width=3200&height=1680&fit=bounds",
+            "publishedAt": "2018-11-17T00:27:02+00:00",
+            "content": "President Donald Trump said he always liked late Supreme Court Justice Antonin Scalia and joked about why at the Medal of Freedom ceremony. USA TODAY President Donald Trump is pictured awarding the Presidential Medal of Freedom to former Supreme Court Justice… [+2737 chars]"
+        },
+        {
+            "source": {
+                "id": "the-wall-street-journal",
+                "name": "The Wall Street Journal"
+            },
+            "author": "Warren P. Strobel",
+            "title": "House Democrats to Step Up Probe of Trump-Russia Ties",
+            "description": "House Democrats said they want to learn more about a deceased GOP activist who sought Hillary Clinton’s private emails, and whether he served as a conduit between the Trump campaign and Russia-tied groups in 2016.",
+            "url": "https://www.wsj.com/articles/house-democrats-to-step-up-probe-of-trump-russia-ties-1542414187?mod=hp_lead_pos9",
+            "urlToImage": "https://images.wsj.net/im-37661/social",
+            "publishedAt": "2018-11-17T00:23:00Z",
+            "content": "WASHINGTONHouse Democrats, poised to reactivate a probe of President Trumps campaign ties to Russia, said this week that an investigatory priority is learning more about a Republican activist who sought 2016 Democratic candidate Hillary Clintons private email… [+5003 chars]"
+        },
+        {
+            "source": {
+                "id": "cnbc",
+                "name": "CNBC"
+            },
+            "author": "Patti Domm",
+            "title": "Trump's trade war with China could disrupt the traditional Thanksgiving week rally",
+            "description": "Trump's trade war with China could disrupt the traditional Thanksgiving week rally",
+            "url": "https://www.cnbc.com/2018/11/16/trump-trade-war-with-china-could-disrupt-traditional-thanksgiving-rally.html",
+            "urlToImage": "https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2018/09/11/105444539-1536687927488gettyimages-871894534.1910x1000.jpeg",
+            "publishedAt": "2018-11-17T00:12:51Z",
+            "content": "As stocks enter the short Thanksgiving holiday week, investors looking for any signs of a market comeback are paying close attention to trade developments with China. div &gt; div.group &gt; p:first-child\"&gt; President Donald Trump gave the market a boost Fr… [+4501 chars]"
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": null,
+            "title": "CNN’s Jim Acosta Returns to the White House After Judge’s Ruling",
+            "description": "The reporter at the center of CNN v. Donald J. Trump got his press pass back after a court said the administration’s process for barring him was “shrouded in mystery.”",
+            "url": "https://www.nytimes.com/2018/11/16/business/media/cnn-acosta-trump.html",
+            "urlToImage": "https://static01.nyt.com/images/2018/11/17/business/17cnn1/merlin_146487009_d8bdd2b1-ded9-4533-bcba-1659c35cce5d-facebookJumbo.jpg",
+            "publishedAt": "2018-11-16T23:54:35+00:00",
+            "content": "This could backfire, said William L. Youmans, a professor of media law at George Washington University. Mr. Acosta gets his credential now, but it empowers the Trump administration to come up with conduct-based criteria. A rudeness or aggressive behavior poli… [+1669 chars]"
+        },
+        {
+            "source": {
+                "id": "the-wall-street-journal",
+                "name": "The Wall Street Journal"
+            },
+            "author": "Warren P. Strobel",
+            "title": "CIA Concludes Saudi Journalist Was Killed on Crown Prince’s Order",
+            "description": "The CIA has concluded that the killing of Saudi journalist Jamal Khashoggi was carried out under the orders of Saudi Crown Prince Mohammed bin Salman, a close ally of President Trump, U.S. officials familiar with the matter said.",
+            "url": "https://www.wsj.com/articles/cia-concludes-saudi-journalist-was-killed-on-the-crown-princes-order-1542412388?mod=hp_lead_pos1",
+            "urlToImage": "https://images.wsj.net/im-37246/social",
+            "publishedAt": "2018-11-16T23:53:00Z",
+            "content": "WASHINGTONThe Central Intelligence Agency has concluded that the killing of Saudi journalist Jamal Khashoggi was carried out under the orders of Saudi Crown Prince Mohammed bin Salman, a close ally of President Trump, U.S. officials familiar with the matter s… [+730 chars]"
+        },
+        {
+            "source": {
+                "id": "axios",
+                "name": "Axios"
+            },
+            "author": "Axios",
+            "title": "Pfizer readies specific drug price hikes for 2019",
+            "description": "So much for that dispute with President Trump.",
+            "url": "https://www.axios.com/pfizer-readies-specific-drug-price-hikes-for-2019-1542410365-f77189b0-0749-407e-bb1b-d9adcbc577ce.html",
+            "urlToImage": "https://images.axios.com/FrSb3cRp1oBJMcbkqS_aRF3tSnE=/0x0:1920x1080/1920x1080/2018/11/16/1542410368334.jpg",
+            "publishedAt": "2018-11-16T23:36:12.378Z",
+            "content": "Pharmaceutical giant Pfizer will raise the list prices of 41 medications early next year, the Wall Street Journal reports. The company said in a statement that those higher prices are \"expected to be offset by higher rebates and discounts.\" Why it matters: Pf… [+286 chars]"
+        },
+        {
+            "source": {
+                "id": "axios",
+                "name": "Axios"
+            },
+            "author": "Axios",
+            "title": "Trump says he \"just finished\" answering Mueller's questions",
+            "description": "\"The questions were very routinely answered, by me ... I just finished them.\"",
+            "url": "https://www.axios.com/trump-says-he-just-finished-answering-muellers-questions-1542411167-efb381b9-b5e3-405e-ad4c-db573b4737e2.html",
+            "urlToImage": "https://images.axios.com/9nlm-bh-6zALbq-WtPS2YqFSaXE=/0x0:1920x1080/1920x1080/2018/11/16/1542411244943.jpg",
+            "publishedAt": "2018-11-16T23:35:40.582Z",
+            "content": "President Trump told reporters Friday that he has \"just finished\" writing his answers to questions submitted by Robert Mueller's team, emphasizing that he has written the answers himself, not his lawyers, and that they will be submitted to the special counsel… [+272 chars]"
+        },
+        {
+            "source": {
+                "id": "abc-news-au",
+                "name": "ABC News (AU)"
+            },
+            "author": null,
+            "title": "Trump says he's finished his answers for Mueller — but hasn't submitted them yet",
+            "description": "Donald Trump says he very easily completed his written answers for special counsel Robert Mueller's investigation into Russia's role in the 2016 US election, but has not yet submitted them.",
+            "url": "http://www.abc.net.au/news/2018-11-17/trump-says-he-finished-his-answers-for-mueller-investigation/10507388",
+            "urlToImage": "https://www.abc.net.au/news/image/9101378-16x9-700x394.jpg",
+            "publishedAt": "2018-11-16T23:26:39Z",
+            "content": "Posted November 17, 2018 10:26:39 US President Donald Trump says he \"very easily\" completed his written answers for special counsel Robert Mueller's investigation into Russia's role in the 2016 US election, but has not yet submitted them to Mr Mueller's offic… [+3474 chars]"
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": null,
+            "title": "Trump awards Medal of Freedom to Babe Ruth, Roger Staubach, Alan Page",
+            "description": "President Donald Trump noted that Babe Ruth was a pitcher and shared a golf antidote about Roger Staubach as Alan Page remained \"stoic.\"",
+            "url": "https://sports.yahoo.com/trump-awards-medal-freedom-babe-ruth-roger-staubach-alan-page-210032857.html",
+            "urlToImage": "https://s.yimg.com/uu/api/res/1.2/isXKuU041uMoHhT1CkaIyQ--~B/aD0yMzM0O3c9MzUwMDtzbT0xO2FwcGlkPXl0YWNoeW9u/http://media.zenfs.com/en/homerun/feed_manager_auto_publish_494/e9dfde280374f678565bc1b39e06d979",
+            "publishedAt": "2018-11-16T23:10:32+00:00",
+            "content": "President Donald Trump awarded the Presidential Medal of Freedom to seven individuals, including NFL greats Roger Staubach and Alan Page and Major League Baseball legend Babe Ruth, during a ceremony at the White House on Friday. Dr. Miriam Adelson, Senator Or… [+4023 chars]"
+        }
+    ]
+}

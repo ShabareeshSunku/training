@@ -1,0 +1,843 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 5201,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "Vrd7BgAAQBAJ",
+      "etag": "idbt70JsJao",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/Vrd7BgAAQBAJ",
+      "volumeInfo": {
+        "title": "Go Set a Watchman",
+        "authors": [
+          "Harper Lee"
+        ],
+        "publisher": "Random House",
+        "publishedDate": "2015-07-14",
+        "description": "From Harper Lee comes a landmark new novel set two decades after her beloved Pulitzer Prize-winning masterpiece, To Kill a Mockingbird. Maycomb, Alabama. Twenty-six-year-old Jean Louise Finch – ‘Scout’ – returns home from New York City to visit her ageing father, Atticus. Set against the backdrop of the civil rights tensions and political turmoil that were transforming the South, Jean Louise’s homecoming turns bittersweet when she learns disturbing truths about her close-knit family, the town and the people dearest to her. Memories from her childhood flood back, and her values and assumptions are thrown into doubt. Featuring many of the iconic characters from To Kill a Mockingbird, Go Set a Watchman perfectly captures a young woman, and a world, in painful yet necessary transition out of the illusions of the past – a journey that can be guided only by one’s own conscience. Written in the mid-1950s, Go Set a Watchman imparts a fuller, richer understanding and appreciation of Harper Lee. Here is an unforgettable novel of wisdom, humanity, passion, humour and effortless precision – a profoundly affecting work of art that is both wonderfully evocative of another era and relevant to our own times. It not only confirms the enduring brilliance of To Kill a Mockingbird, but also serves as its essential companion, adding depth, context and new meaning to a classic.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781473535404"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1473535409"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 288,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "averageRating": 3.5,
+        "ratingsCount": 3467,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.3.4.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=Vrd7BgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=Vrd7BgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=Vrd7BgAAQBAJ&printsec=frontcover&dq=topselling&hl=&cd=1&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=Vrd7BgAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://market.android.com/details?id=book-Vrd7BgAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 339.0,
+          "currencyCode": "INR"
+        },
+        "retailPrice": {
+          "amount": 218.5,
+          "currencyCode": "INR"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=Vrd7BgAAQBAJ&rdid=book-Vrd7BgAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 3.39E8,
+              "currencyCode": "INR"
+            },
+            "retailPrice": {
+              "amountInMicros": 2.185E8,
+              "currencyCode": "INR"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Go_Set_a_Watchman-sample-epub.acsm?id=Vrd7BgAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=Vrd7BgAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Here is an unforgettable novel of wisdom, humanity, passion, humour and effortless precision – a profoundly affecting work of art that is both wonderfully evocative of another era and relevant to our own times."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "BRbKtAEACAAJ",
+      "etag": "GSBtWbwsr9A",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/BRbKtAEACAAJ",
+      "volumeInfo": {
+        "title": "The President's Keepers",
+        "authors": [
+          "Jacques Pauw"
+        ],
+        "publishedDate": "2018-05",
+        "description": "Investigative journalist Jacques Pauw exposes the darkest secret at the heart of Jacob Zuma's compromised government: a cancerous cabal that eliminates the president's enemies and purges the law-enforcement agencies of good men and women. As Zuma fights for his political life following the 2017 Gupta emails leak, this cabal - the president's keepers - ensures that after years of ruinous rule, he remains in power and out of prison. But is Zuma the puppet master, or their puppet? Journey with Pauw as he explores the shadow mafia state. From KwaZulu-Natal and the Western Cape to the corridors of power in Pretoria and Johannesburg - and even to clandestine meetings in Russia. It's a trail of lies and spies, cronies, cash and kingmakers as Pauw prises open the web of deceit that surrounds the fourth president of the democratic era. -- from back cover.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0624083039"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780624083030"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 352,
+        "printType": "BOOK",
+        "categories": [
+          "Abuse of administrative power"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=BRbKtAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=BRbKtAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=BRbKtAEACAAJ&dq=topselling&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.co.in/books?id=BRbKtAEACAAJ&dq=topselling&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_President_s_Keepers.html?hl=&id=BRbKtAEACAAJ"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=BRbKtAEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Investigative journalist Jacques Pauw exposes the darkest secret at the heart of Jacob Zuma&#39;s compromised government: a cancerous cabal that eliminates the president&#39;s enemies and purges the law-enforcement agencies of good men and women."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "YZMoDwAAQBAJ",
+      "etag": "+cb32FTxOrc",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/YZMoDwAAQBAJ",
+      "volumeInfo": {
+        "title": "Girl, Wash Your Face",
+        "subtitle": "Stop Believing the Lies About Who You Are so You Can Become Who You Were Meant to Be",
+        "authors": [
+          "Rachel Hollis"
+        ],
+        "publisher": "Thomas Nelson",
+        "publishedDate": "2018-02-06",
+        "description": "With wry wit and hard-earned wisdom, popular online personality and founder of TheChicSite.com founder Rachel Hollis helps readers break free from the lies keeping them from the joy-filled and exuberant life they are meant to have. Founder of the lifestyle website TheChicSite.com and CEO of her own media company, Chic Media, Rachel Hollis has created an online fan base of hundreds of thousands of fans by sharing tips for living a better life while fearlessly revealing the messiness of her own. Now comes her highly anticipated first book featuring her signature combination of honesty, humor, and direct, no-nonsense advice. Each chapter of Girl, Wash Your Face begins with a specific lie Hollis once believed that left her feeling overwhelmed, unworthy, or ready to give up. As a working mother, a former foster parent, and a woman who has dealt with insecurities about her body and relationships, she speaks with the insight and kindness of a BFF, helping women unpack the limiting mind-sets that destroy their self-confidence and keep them from moving forward. From her temporary obsession with marrying Matt Damon to a daydream involving hypnotic iguanas to her son’s request that she buy a necklace to “be like the other moms,” Hollis holds nothing back. With unflinching faith and tenacity, Hollis spurs other women to live with passion and hustle and to awaken their slumbering goals.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781400201662"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1400201667"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 240,
+        "printType": "BOOK",
+        "categories": [
+          "Self-Help"
+        ],
+        "averageRating": 4.0,
+        "ratingsCount": 5,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.5.5.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=YZMoDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=YZMoDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=YZMoDwAAQBAJ&printsec=frontcover&dq=topselling&hl=&cd=3&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=YZMoDwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://market.android.com/details?id=book-YZMoDwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 928.46,
+          "currencyCode": "INR"
+        },
+        "retailPrice": {
+          "amount": 584.93,
+          "currencyCode": "INR"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=YZMoDwAAQBAJ&rdid=book-YZMoDwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 9.2846E8,
+              "currencyCode": "INR"
+            },
+            "retailPrice": {
+              "amountInMicros": 5.8493E8,
+              "currencyCode": "INR"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Girl_Wash_Your_Face-sample-epub.acsm?id=YZMoDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=YZMoDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "#1 NEW YORK TIMES BESTSELLER Do you ever suspect that everyone else has life figured out and you don’t have a clue? If so, Rachel Hollis has something to tell you: that’s a lie."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "u8w_DwAAQBAJ",
+      "etag": "w+pTnD/FE7w",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/u8w_DwAAQBAJ",
+      "volumeInfo": {
+        "title": "12 Rules for Life",
+        "subtitle": "An Antidote to Chaos",
+        "authors": [
+          "Jordan B. Peterson"
+        ],
+        "publisher": "Penguin UK",
+        "publishedDate": "2018-01-16",
+        "description": "Jordan Peterson's work as a clinical psychologist has reshaped the modern understanding of personality, and now he has become one of the world's most popular public thinkers, with his lectures on topics ranging from the Bible to romantic relationships drawing tens of millions of viewers. In an era of polarizing politics, echo chambers and trigger warnings, his startling message about the value of personal responsibility and the dangers of ideology has resonated around the world. In this book, he combines ancient wisdom with decades of experience to provide twelve profound and challenging principles for how to live a meaningful life, from setting your house in order before criticising others to comparing yourself to who you were yesterday, not someone else today. Gripping, thought-provoking and deeply rewarding, 12 Rules for Life offers an antidote to the chaos in our lives: eternal truths applied to our modern problems.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780241351659"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0241351650"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 448,
+        "printType": "BOOK",
+        "categories": [
+          "Self-Help"
+        ],
+        "averageRating": 4.0,
+        "ratingsCount": 11,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.4.5.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=u8w_DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=u8w_DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=u8w_DwAAQBAJ&printsec=frontcover&dq=topselling&hl=&cd=4&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=u8w_DwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://market.android.com/details?id=book-u8w_DwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 919.22,
+          "currencyCode": "INR"
+        },
+        "retailPrice": {
+          "amount": 359.1,
+          "currencyCode": "INR"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=u8w_DwAAQBAJ&rdid=book-u8w_DwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 9.1922E8,
+              "currencyCode": "INR"
+            },
+            "retailPrice": {
+              "amountInMicros": 3.591E8,
+              "currencyCode": "INR"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/12_Rules_for_Life-sample-epub.acsm?id=u8w_DwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=u8w_DwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "The most enlightening book I have read in ages&#39; Chris Evans Acclaimed psychologist Jordan Peterson has become one of the most influential public thinkers to emerge on the world stage for many years, with his lectures on topics from the ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "7NIcRZHaB1MC",
+      "etag": "ohVq4wuJSAI",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/7NIcRZHaB1MC",
+      "volumeInfo": {
+        "title": "Selling to the Top",
+        "subtitle": "David Peoples' Executive Selling Skills",
+        "authors": [
+          "David A. Peoples"
+        ],
+        "publisher": "John Wiley & Sons",
+        "publishedDate": "1993-06-11",
+        "description": "Recommends that salespeople target the key decision-makers in a company, and provides advice on identifying, approaching, and appealing successfully to such individuals",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0471581054"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780471581055"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 256,
+        "printType": "BOOK",
+        "categories": [
+          "Business & Economics"
+        ],
+        "averageRating": 5.0,
+        "ratingsCount": 1,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=7NIcRZHaB1MC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=7NIcRZHaB1MC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=7NIcRZHaB1MC&printsec=frontcover&dq=topselling&hl=&cd=5&source=gbs_api",
+        "infoLink": "http://books.google.co.in/books?id=7NIcRZHaB1MC&dq=topselling&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Selling_to_the_Top.html?hl=&id=7NIcRZHaB1MC"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=7NIcRZHaB1MC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Recommends that salespeople target the key decision-makers in a company, and provides advice on identifying, approaching, and appealing successfully to such individuals"
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "lFReDwAAQBAJ",
+      "etag": "r0dayF3j/lQ",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/lFReDwAAQBAJ",
+      "volumeInfo": {
+        "title": "Unhinged",
+        "subtitle": "An Insider's Account of the Trump White House",
+        "authors": [
+          "Omarosa Manigault Newman"
+        ],
+        "publisher": "Simon and Schuster",
+        "publishedDate": "2018-08-14",
+        "description": "#1 New York Times Bestseller The former Assistant to the President and Director of Communications for the Office of Public Liaison in the Trump White House provides an eye-opening look into the corruption and controversy of the current administration. Few have been a member of Donald Trump’s inner orbit longer than Omarosa Manigault Newman. Their relationship has spanned fifteen years—through four television shows, a presidential campaign, and a year by his side in the most chaotic, outrageous White House in history. But that relationship has come to a decisive and definitive end, and Omarosa is finally ready to share her side of the story in this explosive, jaw-dropping account. A stunning tell-all and takedown from a strong, intelligent woman who took every name and number, Unhinged is a must-read for any concerned citizen.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781982109721"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1982109726"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 368,
+        "printType": "BOOK",
+        "categories": [
+          "Political Science"
+        ],
+        "averageRating": 3.0,
+        "ratingsCount": 5,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.9.8.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=lFReDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=lFReDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=lFReDwAAQBAJ&printsec=frontcover&dq=topselling&hl=&cd=6&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=lFReDwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://market.android.com/details?id=book-lFReDwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 951.08,
+          "currencyCode": "INR"
+        },
+        "retailPrice": {
+          "amount": 475.54,
+          "currencyCode": "INR"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=lFReDwAAQBAJ&rdid=book-lFReDwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 9.5108E8,
+              "currencyCode": "INR"
+            },
+            "retailPrice": {
+              "amountInMicros": 4.7554E8,
+              "currencyCode": "INR"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Unhinged-sample-epub.acsm?id=lFReDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=lFReDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "But that relationship has come to a decisive and definitive end, and Omarosa is finally ready to share her side of the story in this explosive, jaw-dropping account."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "nEzytgAACAAJ",
+      "etag": "TBB8GebOrJs",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/nEzytgAACAAJ",
+      "volumeInfo": {
+        "title": "Gender, Violence and Victimization in Top-selling Video Games",
+        "authors": [
+          "Katharine E. Heintz-Knowles",
+          "Jennifer Jacobs Henderson"
+        ],
+        "publishedDate": "2002",
+        "description": "Using the cultivation hypothesis and cognitive social learning theory as conceptual foundations, this study discovered that female characters in top selling video games are underrepresented overall, and when they are included in games, it is often in the role of prop, bystander, or victim.",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "OCLC:373874413"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 33,
+        "printType": "BOOK",
+        "categories": [
+          "Computer games"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=nEzytgAACAAJ&dq=topselling&hl=&cd=7&source=gbs_api",
+        "infoLink": "http://books.google.co.in/books?id=nEzytgAACAAJ&dq=topselling&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Gender_Violence_and_Victimization_in_Top.html?hl=&id=nEzytgAACAAJ"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=nEzytgAACAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Using the cultivation hypothesis and cognitive social learning theory as conceptual foundations, this study discovered that female characters in top selling video games are underrepresented overall, and when they are included in games, it ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "-1UETU2h-AoC",
+      "etag": "wOz/MhiejvA",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/-1UETU2h-AoC",
+      "volumeInfo": {
+        "title": "Quotations from Chairman Mao Tsetung",
+        "authors": [
+          "Zedong Mao"
+        ],
+        "publisher": "China Books",
+        "publishedDate": "1972",
+        "description": "This new reprint brings back our best-selling book to date, in the familiar red plastic cover. Still popular as a textbook and primary document of the Cultural Revolution. The book that changed the world and shaped a generation of Chinese people, it contains the essence of Mao's philosophy, political thinking and military strategy.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "083512388X"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780835123884"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 311,
+        "printType": "BOOK",
+        "categories": [
+          "History"
+        ],
+        "averageRating": 3.0,
+        "ratingsCount": 15,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.1.1.0.preview.1",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=-1UETU2h-AoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=-1UETU2h-AoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=-1UETU2h-AoC&printsec=frontcover&dq=topselling&hl=&cd=8&source=gbs_api",
+        "infoLink": "http://books.google.co.in/books?id=-1UETU2h-AoC&dq=topselling&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Quotations_from_Chairman_Mao_Tsetung.html?hl=&id=-1UETU2h-AoC"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=-1UETU2h-AoC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "z8sfZrpMD3EC",
+      "etag": "pLnRPXs0aGM",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/z8sfZrpMD3EC",
+      "volumeInfo": {
+        "title": "Top Selling Home Designs",
+        "authors": [
+          "Garlinghouse"
+        ],
+        "publisher": "Garlinghouse Co",
+        "publishedDate": "2002-06-01",
+        "description": "This book features 300 of our finest, best-selling home plans plus three helpful articles on some choices you'll need to make as you build your new home. Articles offer advice on radiant-heated floors, in-home water filtration systems, and choosing the right colors for your new home. This new book also highlights eight featured homes with stories, photography, and color renderings. Every plan in this book can be modified to fit the precise requirements of the buyer. Published by The Garlinghouse Co., the nation's first and oldest home plans company.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1893536025"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781893536029"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 256,
+        "printType": "BOOK",
+        "categories": [
+          "Architecture"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=z8sfZrpMD3EC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=z8sfZrpMD3EC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=z8sfZrpMD3EC&q=topselling&dq=topselling&hl=&cd=9&source=gbs_api",
+        "infoLink": "http://books.google.co.in/books?id=z8sfZrpMD3EC&dq=topselling&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Top_Selling_Home_Designs.html?hl=&id=z8sfZrpMD3EC"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=z8sfZrpMD3EC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "This new book also highlights eight featured homes with stories, photography, and color renderings. Every plan in this book can be modified to fit the precise requirements of the buyer."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "l6x0a-jkoGUC",
+      "etag": "e5RVS4MfvPY",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/l6x0a-jkoGUC",
+      "volumeInfo": {
+        "title": "Drive",
+        "subtitle": "The Surprising Truth About What Motivates Us",
+        "authors": [
+          "Daniel H. Pink"
+        ],
+        "publisher": "Canongate Books",
+        "publishedDate": "2010-01-21",
+        "description": "Forget everything you thought you knew about how to motivate people - at work, at school, at home. It's wrong. As Daniel H. Pink explains in his new and paradigm-shattering book DRIVE: THE SURPRISING TRUTH ABOUT WHAT MOTIVATES US, the secret to high performance and satisfaction in today's world is the deeply human need to direct our own lives, to learn and create new things, and to do better by ourselves and our world. Drawing on four decades of scientific research on human motivation, Pink exposes the mismatch between what science knows and what business does - and how that affects every aspect of our lives. He demonstrates that while the old-fashioned carrot-and-stick approach worked successfully in the 20th century, it's precisely the wrong way to motivate people for today's challenges. In DRIVE, he reveals the three elements of true motivation: AUTONOMY - the desire to direct our own lives; MASTERY - the urge to get better and better at something that matters; PURPOSE - the yearning to do what we do in the service of something larger than ourselves. Along the way, he takes us to companies that are enlisting new approaches to motivation and introduces us to the scientists and entrepreneurs who are pointing a bold way forward. DRIVE is bursting with big ideas - the rare book that will change how you think and transform how you live.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781847678881"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1847678882"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 256,
+        "printType": "BOOK",
+        "categories": [
+          "Business & Economics"
+        ],
+        "averageRating": 3.5,
+        "ratingsCount": 3447,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "0.8.6.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=l6x0a-jkoGUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=l6x0a-jkoGUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.co.in/books?id=l6x0a-jkoGUC&printsec=frontcover&dq=topselling&hl=&cd=10&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=l6x0a-jkoGUC&source=gbs_api",
+        "canonicalVolumeLink": "https://market.android.com/details?id=book-l6x0a-jkoGUC"
+      },
+      "saleInfo": {
+        "country": "IN",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 470.82,
+          "currencyCode": "INR"
+        },
+        "retailPrice": {
+          "amount": 355.3,
+          "currencyCode": "INR"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=l6x0a-jkoGUC&rdid=book-l6x0a-jkoGUC&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 4.7082E8,
+              "currencyCode": "INR"
+            },
+            "retailPrice": {
+              "amountInMicros": 3.553E8,
+              "currencyCode": "INR"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "IN",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Drive-sample-epub.acsm?id=l6x0a-jkoGUC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.co.in/books/download/Drive-sample-pdf.acsm?id=l6x0a-jkoGUC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=l6x0a-jkoGUC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "DRIVE is bursting with big ideas - the rare book that will change how you think and transform how you live."
+      }
+    }
+  ]
+}

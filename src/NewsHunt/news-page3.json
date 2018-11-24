@@ -1,0 +1,136 @@
+{
+    "status": "ok",
+    "totalResults": 10,
+    "articles": [
+        {
+            "source": {
+                "id": "techcrunch",
+                "name": "TechCrunch"
+            },
+            "author": "Mark Harris",
+            "title": "The Boring Company goes brick-and-mortar with The Brick Store",
+            "description": "Elon Musk has shot out some crazy, unbelievable tweets over the last year, but he wasn’t joking about the bricks. Musk has started a company called The Brick Store LLC to produce and sell bricks, according to public documents obtained by TechCrunch. The new c…",
+            "url": "https://techcrunch.com/2018/11/16/elon-musk-boring-company-the-brick-store/",
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2018/11/Screenshot-2018-11-16-15.48.50.png?w=764",
+            "publishedAt": "2018-11-17T01:07:36Z",
+            "content": "Elon Musk has shot out some crazy, unbelievable tweets over the last year, but he wasnt joking about the bricks. Musk has started a company called The Brick Store LLC to produce and sell bricks, according to public documents obtained by TechCrunch. The new co… [+4282 chars]"
+        },
+        {
+            "source": {
+                "id": "techcrunch",
+                "name": "TechCrunch"
+            },
+            "author": "Kate Clark",
+            "title": "Unicorns aren't special anymore",
+            "description": "There are 145 \"active unicorns\" today worth an aggregate valuation of $555.9 billion. In 2013, there were just 39.",
+            "url": "https://techcrunch.com/2018/11/16/unicorns-arent-special-anymore/",
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2018/11/GettyImages-801630336.jpg?w=646",
+            "publishedAt": "2018-11-17T00:06:55Z",
+            "content": "When Aileen Lee, the former Kleiner Perkins partner and founder of the seed-stage venture capital firm Cowboy Ventures, coined the term “unicorn” in 2013 on this very site, there were just 39 companies that had earned the title. She called them “t he lucky/ge… [+2127 chars]"
+        },
+        {
+            "source": {
+                "id": "techcrunch",
+                "name": "TechCrunch"
+            },
+            "author": "Connie Loizos",
+            "title": "Feeling left out of a hot market? This new outfit has a fund with shares of 30 top 'unicorns' to sell you",
+            "description": "When Equidate, a venture-backed secondaries marketplace based in San Francisco, closed its most recent round of funding with $50 million four months ago, it was hardly a surprising bet on the part of its backers. As startups linger ever longer as private comp…",
+            "url": "https://techcrunch.com/2018/11/16/feeling-left-out-of-a-hot-market-this-new-outfit-has-a-fund-with-shares-of-30-top-unicorns-to-sell-you/",
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2018/11/Screenshot-2018-11-16-15.06.14.png?w=764",
+            "publishedAt": "2018-11-16T23:30:05Z",
+            "content": "When Equidate, a venture-backed secondaries marketplace based in San Francisco, closed its most recent round of funding with $50 million four months ago, it was hardly a surprising bet on the part of its backers. As startups linger ever longer as private comp… [+3949 chars]"
+        },
+        {
+            "source": {
+                "id": "techcrunch",
+                "name": "TechCrunch"
+            },
+            "author": "Megan Rose Dickey",
+            "title": "Kairos founder countersues his own company for $10 million",
+            "description": "The turmoil continues at facial recognition startup Kairos. Last night, Kairos founder Brian Brackeen filed a counter lawsuit against Kairos and its interim CEO Melissa Doval that seeks $10 million in damages. Kairos is a facial recognition startup that has b…",
+            "url": "https://techcrunch.com/2018/11/16/kairos-founder-countersues-for-10-million/",
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2018/09/disruptsf18_brian_brackeen_kairos-2180.jpg?w=600",
+            "publishedAt": "2018-11-16T23:24:27Z",
+            "content": "The turmoil continues at facial recognition startup Kairos. Last night, Kairos founder Brian Brackeen filed a counter lawsuit against Kairos and its interim CEO Melissa Doval that seeks $10 million in damages. Kairos is a facial recognition startup that has b… [+5606 chars]"
+        },
+        {
+            "source": {
+                "id": "techcrunch",
+                "name": "TechCrunch"
+            },
+            "author": "Jonathan Shieber",
+            "title": "Pitching a $99 tax advisory service for the masses, Visor has raised $9 million",
+            "description": "The only sure things in this life, according to Ben Franklin, are death and taxes. And a new startup called Visor has just raised $9 million in financing to make one of them as painless as possible. Unlike Nectome, Visor won’t kill anyone, but it may ring the…",
+            "url": "https://techcrunch.com/2018/11/16/pitching-a-99-tax-advisory-service-for-the-masses-visor-has-raised-9-million/",
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2018/11/34131692754_6576968c49_o.jpg?w=679",
+            "publishedAt": "2018-11-16T21:59:48Z",
+            "content": "The only sure things in this life, according to Ben Franklin, are death and taxes. And a new startup called Visor has just raised $9 million in financing to make one of them as painless as possible. Unlike Nectome, Visor won’t kill anyone, but it may ring the… [+2690 chars]"
+        },
+        {
+            "source": {
+                "id": "techcrunch",
+                "name": "TechCrunch"
+            },
+            "author": "Anthony Ha",
+            "title": "The Criterion Collection is launching its own streaming service",
+            "description": "When WarnerMedia announced last month that it would be shutting down its streaming service FilmStruck, the team at the Criterion Collection said it would be looking for a new digital home. Today, Criterion announced that it will be building that home itself —…",
+            "url": "https://techcrunch.com/2018/11/16/criterion-channel/",
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2015/04/shutterstock_92369293.jpg?w=600",
+            "publishedAt": "2018-11-16T21:32:40Z",
+            "content": "When WarnerMedia announced last month that it would be shutting down its streaming service FilmStruck, the team at the Criterion Collection said it would be looking for a new digital home. Today, Criterion announced that it will be building that home itself n… [+1608 chars]"
+        },
+        {
+            "source": {
+                "id": "techcrunch",
+                "name": "TechCrunch"
+            },
+            "author": "Kirsten Korosec",
+            "title": "Tesla has opened up Model 3 orders to customers in China",
+            "description": "Tesla is now taking orders for the Model 3 from customers in China, according to its website. Reuters was the first to report that Tesla is taking orders in China. Tesla won’t confirm or comment on the information published on its own China-focused website. T…",
+            "url": "https://techcrunch.com/2018/11/16/tesla-has-opened-up-model-3-orders-to-customers-in-china/",
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2018/10/model-3@2.jpg?w=712",
+            "publishedAt": "2018-11-16T21:27:46Z",
+            "content": "Tesla is now taking orders for the Model 3 from customers in China, according to its website. Reuters was the first to report that Tesla is taking orders in China. Tesla won’t confirm or comment on the information published on its own China-focused website. T… [+2252 chars]"
+        },
+        {
+            "source": {
+                "id": "techcrunch",
+                "name": "TechCrunch"
+            },
+            "author": "Chris Gates",
+            "title": "Gift Guide: The best gear for that friend who wants to start a podcast",
+            "description": "“How do I start a podcast?”\r\n\r\nAs the producer of the TechCrunch podcast Equity, I get this question all the time. Fortunately, it's easier than ever to get your voice out there.",
+            "url": "https://techcrunch.com/2018/11/16/gift-guide-the-best-gear-for-that-friend-who-wants-to-start-a-podcast/",
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2018/11/hero1.png?w=753",
+            "publishedAt": "2018-11-16T20:43:40Z",
+            "content": "Welcome to TechCrunchs 2018 Holiday Gift Guide! Need more gift ideas? Check out our Gift Guide Hub. How do I start a podcast? As the producer of the TechCrunch podcast Equity, I get this question all the time. Fortunately, it’s easier than ever to get your vo… [+7536 chars]"
+        },
+        {
+            "source": {
+                "id": "techcrunch",
+                "name": "TechCrunch"
+            },
+            "author": "Anthony Ha",
+            "title": "Stoop aims to improve your news diet with an easy way to find and read newsletters",
+            "description": "Stoop is looking to provide readers with what CEO Tim Raybould described as “a healthier information diet.” To do that, it’s launched an iOS and Android app where you can browse through different newsletters based on category, and when you find one you like, …",
+            "url": "https://techcrunch.com/2018/11/16/stoop-launch/",
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2018/11/StoopOnDesk.jpg?w=600",
+            "publishedAt": "2018-11-16T19:26:03Z",
+            "content": "Stoop is looking to provide readers with what CEO Tim Raybould described as “a healthier information diet.” To do that, it’s launched an iOS and Android app where you can browse through different newsletters based on category, and when you find one you like, … [+3250 chars]"
+        },
+        {
+            "source": {
+                "id": "techcrunch",
+                "name": "TechCrunch"
+            },
+            "author": "Devin Coldewey",
+            "title": "Cryptocurrency chill causes mining speculator Nvidia's stock to plunge",
+            "description": "The cryptocurrency market is an exciting one, but it's also unpredictable — and when things go south, they take related businesses with them. Nvidia, a hardware giant that has been riding the cryptocurrency wave, saw its stock price take a double-digit hit as…",
+            "url": "https://techcrunch.com/2018/11/16/cryptocurrency-chill-causes-mining-speculator-nvidias-stock-to-plunge/",
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2018/11/GettyImages-957037038.jpg?w=600",
+            "publishedAt": "2018-11-16T19:12:10Z",
+            "content": "The cryptocurrency market is an exciting one, but it’s also unpredictable and when things go south, they take related businesses with them. Nvidia, a hardware giant that has been riding the cryptocurrency wave, saw its stock price take a double-digit hit as i… [+2966 chars]"
+        }
+    ]
+}
