@@ -38,6 +38,66 @@ const Caption = (props) => <StyledText name="caption"  {...props} />
 const ButtonText = (props) => <StyledText name="button" {...props} />
 const Description = (props) => <StyledText name="description"  {...props} />
 
+const rawStyles = {
+    headline: {
+        fontSize: 24,
+        lineHeight: 32,
+        fontFamily: fonts.regular,
+        backgroundColor: 'transparent',
+        color: 'rgba(0,0,0,0.87)'
+    },
+    title: {
+        fontSize: 20,
+        lineHeight: 30,
+        fontFamily: fonts.medium,
+        backgroundColor: 'transparent',
+        color: 'rgba(0,0,0,0.87)'
+    },
+    subheading: {
+        fontSize: 16,
+        lineHeight: 24,
+        fontFamily: fonts.medium,
+        backgroundColor: 'transparent',
+        color: 'rgba(0,0,0,0.87)'
+    },
+    body2: {
+        fontSize: 14,
+        lineHeight: 20,
+        fontFamily: fonts.medium,
+        backgroundColor: 'transparent',
+        color: 'rgba(0,0,0,0.87)'
+    },
+    body1: {
+        fontSize: 14,
+        lineHeight: 20,
+        fontFamily: fonts.regular,
+        marginVertical: 2,
+        backgroundColor: 'transparent',
+        color: 'rgba(0,0,0,0.87)'
+    },
+    description: {
+        fontSize: 14,
+        lineHeight: 20,
+        fontFamily: fonts.regular,
+        marginVertical: 2,
+        backgroundColor: 'transparent',
+        color: 'rgba(0,0,0,0.48)'
+    },
+    caption: {
+        fontSize: 12,
+        lineHeight: 16,
+        fontFamily: fonts.regular,
+        backgroundColor: 'transparent',
+        color: 'rgba(0,0,0,0.48)'
+    },
+    button: {
+        fontSize: 14,
+        lineHeight: 20,
+        fontFamily: fonts.medium,
+        backgroundColor: 'transparent',
+        color: 'rgba(0,0,0,0.87)'
+    }
+}
 export {
     Headline,
     Title,
@@ -46,66 +106,8 @@ export {
     Body1,
     Caption,
     ButtonText,
-    Description
+    Description,
+    rawStyles
 }
-const styles = StyleSheet.create({
-    headline: {
-        fontSize: 24,
-        lineHeight: 32,
-        fontFamily: fonts.regular,
-        backgroundColor: 'transparent',
-        color : 'rgba(0,0,0,0.87)'
-    },
-    title: {
-        fontSize: 20,
-        lineHeight: 30,
-        fontFamily: fonts.medium,
-        backgroundColor: 'transparent',
-        color : 'rgba(0,0,0,0.87)'
-    },
-    subheading: {
-        fontSize: 16,
-        lineHeight: 24,
-        fontFamily: fonts.medium,
-        backgroundColor: 'transparent',
-        color : 'rgba(0,0,0,0.87)'
-    },
-    body2: {
-        fontSize: 14,
-        lineHeight: 20,
-        fontFamily: fonts.medium,
-        backgroundColor: 'transparent',
-        color : 'rgba(0,0,0,0.87)'
-    },
-    body1: {
-        fontSize: 14,
-        lineHeight: 20,
-        fontFamily: fonts.regular,
-        marginVertical: 2,
-        backgroundColor: 'transparent',
-        color : 'rgba(0,0,0,0.87)'
-    },
-    description: {
-        fontSize: 14,
-        lineHeight: 20,
-        fontFamily: fonts.regular,
-        marginVertical: 2,
-        backgroundColor: 'transparent',
-        color : 'rgba(0,0,0,0.48)'
-    },
-    caption: {
-        fontSize: 12,
-        lineHeight: 16,
-        fontFamily: fonts.regular,
-        backgroundColor: 'transparent',
-        color : 'rgba(0,0,0,0.48)'
-    },
-    button: {
-        fontSize: 14,
-        lineHeight: 20,
-        fontFamily: fonts.medium,
-        backgroundColor: 'transparent',
-        color : 'rgba(0,0,0,0.87)'
-    }
-})
+const styles = StyleSheet.create(rawStyles)
 

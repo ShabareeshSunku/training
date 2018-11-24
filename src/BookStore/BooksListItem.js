@@ -7,14 +7,9 @@ export default class BookListItem extends PureComponent {
     const {
       id = '',
       selfLink = '',
-      title = '',
-      thumbnail = '',
-      description = '',
-      rating = '',
-      subtitle = '',
-      authors = []
+      title = ''
     } = this.props
-    this.props.itemPressCallback({ id, title, selfLink, thumbnail, description, rating, authors, subtitle })
+    this.props.itemPressCallback({ id, title, selfLink })
   }
   render() {
     const {
@@ -29,7 +24,7 @@ export default class BookListItem extends PureComponent {
       rating = 0,
       count = 0
     } = this.props
-    
+
     return (
       <View style={styles.container}>
         <TouchableOpacity style={styles.touchable} onPress={this.onItemPress}>
@@ -65,13 +60,13 @@ export default class BookListItem extends PureComponent {
                 <Text>
                   <SubHeading>{price}{' '}</SubHeading>
                   {
-                    listPrice ? <Description style={styles.strikethrough}>
+                    (listPrice && price != listPrice) ? <Description style={styles.strikethrough}>
                       {listPrice}
                     </Description> : null
                   }
                   {
                     (price && listPrice && price != listPrice) ? (
-                      <Description color="green">{' '}{Math.floor(listPrice - price)} off</Description>
+                      <Description color="green">{' '}{Math.floor((listPrice - price) / listPrice * 100)}% off</Description>
                     ) : null
                   }
                 </Text>) : null

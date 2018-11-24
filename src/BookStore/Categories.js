@@ -3,6 +3,7 @@ import { Picker } from 'react-native'
 
 export default function (props) {
     const categories = [
+        'Best Selling',
         'all',
         'Science',
         'fiction',

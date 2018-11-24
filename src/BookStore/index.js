@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import { View, Text, FlatList, StyleSheet, ActivityIndicator } from 'react-native'
 import BooksListItem from './BooksListItem'
-import parseBooks from './parser'
+import { parseBooks } from './parser'
 import CategoryFilter from './Categories'
+import Loader from '../common/Loader'
+
 export default class BookStore extends Component {
     static navigationOptions = {
         title: 'Book Store'
@@ -15,8 +17,7 @@ export default class BookStore extends Component {
             query: '',
             totalItems: 0,
             loading: true,
-            loadingMore: false,
-            category: 'all'
+            loadingMore: false
         }
     }
 
@@ -26,11 +27,7 @@ export default class BookStore extends Component {
         }
         //replace special characters and split string based on a word space and join it with '+'
         let encodedQuery = query.replace(/^\s+|\s+$|\s+(?=\s)/g, '').split(' ').join('+')
-        let category = this.state.category
-        if (category !== 'all') {
-            encodedQuery = category.replace(/^\s+|\s+$|\s+(?=\s)/g, '').split(' ').join('+')
-
-        }
+        
         let url = `https://www.googleapis.com/books/v1/volumes?q=${encodedQuery}&maxResults=10&startIndex=${startIndex}`
 
         fetch(url)
@@ -69,17 +66,16 @@ export default class BookStore extends Component {
             })
         }
     }
-    updateCategory = (category = 'all') => {
+    updateCategory = (category = 'top selling') => {
         this.setState({
             books: [],
             startIndex: 0,
-            query: '',
+            query: category,
             totalItems: 0,
             loading: true,
-            loadingMore: false,
-            category: category
+            loadingMore: false
         }, () => {
-            this.fetchBooks('Best Selling', 0)
+            this.fetchBooks(category, 0)
         })
     }
     itemPressCallback = (item = {}) => {
@@ -99,7 +95,7 @@ export default class BookStore extends Component {
         return (
             <View style={{ backgroundColor: '#FFF', width: '100%', elevation: 3 }}>
                 <CategoryFilter
-                    selectedValue={this.state.category}
+                    selectedValue={this.state.query}
                     changeCategory={this.updateCategory} />
             </View>
         )
@@ -110,9 +106,7 @@ export default class BookStore extends Component {
             <View style={styles.container}>
                 {
                     loading ? (
-                        <View style={styles.loader}>
-                            <ActivityIndicator size="large" color="#5367a5" style={{ transform: [{ scale: 1.5 }] }} />
-                        </View>
+                        <Loader />
                     ) : (
                             <FlatList
                                 data={books}
@@ -121,7 +115,7 @@ export default class BookStore extends Component {
                                 onEndReachedThreshold={0.1}
                                 ListFooterComponent={this.footer}
                                 ListHeaderComponent={this.header}
-                                stickyHeaderIndices={[0]}
+                                //stickyHeaderIndices={[0]}
                                 renderItem={({ item }) => (<BooksListItem
                                     title={item.title}
                                     subtitle={item.subtitle || item.description}
@@ -149,11 +143,6 @@ export default class BookStore extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1
-    },
-    loader: {
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center'
     },
     loadMore: {
         height: 60,
