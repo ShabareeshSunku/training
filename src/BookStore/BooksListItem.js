@@ -1,7 +1,9 @@
 import React, { PureComponent } from 'react'
-import { View, Image, TouchableOpacity, StyleSheet, Text } from 'react-native'
+import { View, Image, StyleSheet, Text } from 'react-native'
 import { Title, Description, Caption, SubHeading } from '../common/Typography'
 import Rating from '../common/StarRating'
+import RippleFeedback from '../common/RippleFeedback'
+
 export default class BookListItem extends PureComponent {
   onItemPress = () => {
     const {
@@ -25,7 +27,7 @@ export default class BookListItem extends PureComponent {
 
     return (
       <View style={styles.container}>
-        <TouchableOpacity style={styles.touchable} onPress={this.onItemPress}>
+        <RippleFeedback style={styles.touchable} onPress={this.onItemPress}>
           {
             thumbnail ? (
               <View style={styles.imgContainer}>
@@ -77,7 +79,7 @@ export default class BookListItem extends PureComponent {
               ) : null
             }
           </View>
-        </TouchableOpacity>
+        </RippleFeedback>
       </View>
     )
 

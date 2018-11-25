@@ -18,25 +18,28 @@ if (Platform.OS == 'ios') {
 
 class StyledText extends PureComponent {
     render() {
-        const { name = 'description', color = '', style = {}, ...rest } = this.props
-        const aggregateStyles = StyleSheet.flatten([styles[name], style, color && { color }])
+        const { name = 'description', color, style, ...rest } = this.props
+        const aggregateStyles = [styles[name], this.props.style]
+        if (color) {
+            aggregateStyles.push({ color: color })
+        }
         return (
             <Text
-                style={aggregateStyles}
                 {...rest}
+                style={StyleSheet.flatten(aggregateStyles)}
             />
         )
     }
 }
 
-const Headline = (props) => <StyledText name="headline" {...props} />
-const Title = (props) => <StyledText name="title" {...props} />
-const SubHeading = (props) => <StyledText name="subheading" {...props} />
-const Body2 = (props) => <StyledText name="body2" {...props} />
-const Body1 = (props) => <StyledText name="body1" {...props} />
-const Caption = (props) => <StyledText name="caption"  {...props} />
-const ButtonText = (props) => <StyledText name="button" {...props} />
-const Description = (props) => <StyledText name="description"  {...props} />
+const Headline = (props) => <StyledText name="headline" color='rgba(0,0,0,0.87)' {...props} />
+const Title = (props) => <StyledText name="title" color='rgba(0,0,0,0.87)' {...props} />
+const SubHeading = (props) => <StyledText name="subheading" color='rgba(0,0,0,0.87)' {...props} />
+const Body2 = (props) => <StyledText name="body2" color='rgba(0,0,0,0.87)' {...props} />
+const Body1 = (props) => <StyledText name="body1" color='rgba(0,0,0,0.87)' {...props} />
+const Caption = (props) => <StyledText name="caption" color='rgba(0,0,0,0.48)' {...props} />
+const ButtonText = (props) => <StyledText name="button" color='rgba(0,0,0,0.87)' {...props} />
+const Description = (props) => <StyledText name="description" color='rgba(0,0,0,0.48)' {...props} />
 
 const rawStyles = {
     headline: {
@@ -99,6 +102,17 @@ const rawStyles = {
     }
 }
 export {
+    Headline,
+    Title,
+    SubHeading,
+    Body2,
+    Body1,
+    Caption,
+    ButtonText,
+    Description,
+    rawStyles
+}
+export default {
     Headline,
     Title,
     SubHeading,

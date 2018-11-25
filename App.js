@@ -3,7 +3,7 @@ import { StyleSheet, SafeAreaView, StatusBar } from 'react-native'
 import { createStackNavigator, createAppContainer } from 'react-navigation'
 import BookStore from './src/BookStore'
 import BookDetails from './src/BookStore/BookDetails'
-
+import PhoneBook from './src/PhoneBook'
 const RootStack = createStackNavigator(
   {
     home: BookStore,
@@ -32,7 +32,8 @@ export default class App extends Component {
         barStyle="light-content"
         backgroundColor="#6b52ae"
       />
-      <AppContainer />
+      {/* <AppContainer /> */}
+      <PhoneBook />
     </SafeAreaView>)
   }
 }

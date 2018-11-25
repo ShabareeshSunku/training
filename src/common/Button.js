@@ -1,15 +1,15 @@
 import React from 'react'
-import { View, StyleSheet, TouchableOpacity } from 'react-native'
+import { View, StyleSheet } from 'react-native'
 import { SubHeading } from './Typography'
-
+import RippleFeedback from './RippleFeedback'
 const Button = (props) => {
     const {
         text = ""
     } = props
     return (
-        <TouchableOpacity style={styles.touchable} onPress={props.onPress}>
+        <RippleFeedback style={styles.touchable} onPress={props.onPress}>
             <SubHeading color="#6b52ae">{text}</SubHeading>
-        </TouchableOpacity >
+        </RippleFeedback >
     )
 }
 export default Button
