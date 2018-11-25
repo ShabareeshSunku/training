@@ -15,11 +15,9 @@ export default class BookListItem extends PureComponent {
     const {
       title = '',
       subtitle = '',
-      description = '',
       price = '',
       listPrice = '',
       authors = [],
-      formats = [],
       thumbnail = '',
       rating = 0,
       count = 0
@@ -51,14 +49,14 @@ export default class BookListItem extends PureComponent {
                 <Rating
                   rating={rating}
                   count={count}
-                  color="#5367a5"
-                  textColor="#5367a5" />
+                  color="#6b52ae"
+                  textColor="#6b52ae" />
               ) : null
             }
             {
               price ? (
                 <Text>
-                  <SubHeading>{price}{' '}</SubHeading>
+                  <SubHeading>₹ {price}{' '}</SubHeading>
                   {
                     (listPrice && price != listPrice) ? <Description style={styles.strikethrough}>
                       {listPrice}

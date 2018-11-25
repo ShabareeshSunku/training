@@ -27,7 +27,7 @@ export default class BookStore extends Component {
         }
         //replace special characters and split string based on a word space and join it with '+'
         let encodedQuery = query.replace(/^\s+|\s+$|\s+(?=\s)/g, '').split(' ').join('+')
-        
+
         let url = `https://www.googleapis.com/books/v1/volumes?q=${encodedQuery}&maxResults=10&startIndex=${startIndex}`
 
         fetch(url)
@@ -100,6 +100,20 @@ export default class BookStore extends Component {
             </View>
         )
     }
+    renderItem = ({ item }) => (<BooksListItem
+        title={item.title}
+        subtitle={item.subtitle || item.description}
+        authors={item.authors}
+        rating={item.rating}
+        count={item.count}
+        thumbnail={item.thumbnail}
+        listPrice={item.listPrice}
+        price={item.price}
+        selfLink={item.selfLink}
+        id={item.id}
+        description={item.description}
+        itemPressCallback={this.itemPressCallback}
+    />)
     render() {
         const { books = [], loading = false } = this.state
         return (
@@ -115,26 +129,10 @@ export default class BookStore extends Component {
                                 onEndReachedThreshold={0.1}
                                 ListFooterComponent={this.footer}
                                 ListHeaderComponent={this.header}
-                                //stickyHeaderIndices={[0]}
-                                renderItem={({ item }) => (<BooksListItem
-                                    title={item.title}
-                                    subtitle={item.subtitle || item.description}
-                                    authors={item.authors}
-                                    rating={item.rating}
-                                    count={item.count}
-                                    thumbnail={item.thumbnail}
-                                    listPrice={item.listPrice}
-                                    price={item.price}
-                                    selfLink={item.selfLink}
-                                    id={item.id}
-                                    description={item.description}
-                                    itemPressCallback={this.itemPressCallback}
-                                />)}
+                                renderItem={this.renderItem}
                             />
                         )
                 }
-
-
             </View>
         )
     }

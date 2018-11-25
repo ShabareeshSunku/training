@@ -99,7 +99,7 @@ export default class BookDetails extends Component {
                   {
                     price ? (
                       <Text>
-                        <SubHeading>{price}{' '}</SubHeading>
+                        <SubHeading>₹ {price}{' '}</SubHeading>
                         {
                           (listPrice && price != listPrice) ? <Description style={styles.strikethrough}>
                             {listPrice}
