@@ -60,7 +60,7 @@ export default class BookListItem extends PureComponent {
                 <Text>
                   <SubHeading>₹ {price}{' '}</SubHeading>
                   {
-                    (listPrice && price != listPrice) ? <Description style={styles.strikethrough}>
+                    (listPrice && price != listPrice) ? <Description textStyle={styles.strikethrough}>
                       {listPrice}
                     </Description> : null
                   }
@@ -73,7 +73,7 @@ export default class BookListItem extends PureComponent {
             }
             {
               subtitle ? (
-                <Description numberOfLines={2} style={{ opacity: 0.7 }}>
+                <Description numberOfLines={2} textStyle={{ opacity: 0.7 }}>
                   {subtitle}
                 </Description>
               ) : null

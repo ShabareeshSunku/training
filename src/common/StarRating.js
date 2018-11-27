@@ -33,7 +33,7 @@ function StarRating(props) {
                     return <Icon name={star} color={color} size={size} key={index + ''} />
                 })
             }
-            <SubHeading color={textColor} style={{ paddingLeft: 8 }}>
+            <SubHeading color={textColor} textStyle={{ paddingLeft: 8 }}>
                 {`${rating}${count ?'/' + count : ''}`}
             </SubHeading>
         </View>

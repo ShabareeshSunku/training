@@ -18,8 +18,8 @@ if (Platform.OS == 'ios') {
 
 class StyledText extends PureComponent {
     render() {
-        const { name = 'description', color, style, ...rest } = this.props
-        const aggregateStyles = [styles[name], this.props.style]
+        const { name = 'description', color, textStyle, ...rest } = this.props
+        const aggregateStyles = [styles[name], this.props.textStyle]
         if (color) {
             aggregateStyles.push({ color: color })
         }

@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
-import { View, Text, FlatList, StyleSheet, ActivityIndicator } from 'react-native'
+import { View, Modal, FlatList, StyleSheet, ActivityIndicator } from 'react-native'
 import BooksListItem from './BooksListItem'
 import { parseBooks } from './parser'
-import CategoryFilter from './Categories'
-import Loader from '../common/Loader'
-
+import TopPicks from './TopPicks'
+import { Loader, SearchBar, Button } from '../common'
 export default class BookStore extends Component {
     static navigationOptions = {
         title: 'Book Store'
@@ -17,7 +16,8 @@ export default class BookStore extends Component {
             query: '',
             totalItems: 0,
             loading: true,
-            loadingMore: false
+            loadingMore: false,
+            showTopPicks: false
         }
     }
 
@@ -54,7 +54,7 @@ export default class BookStore extends Component {
             })
     }
     componentDidMount() {
-        this.fetchBooks('Romance', 0)
+        this.fetchBooks('Best Selling', 0)
     }
 
     loadMore = () => {
@@ -66,16 +66,17 @@ export default class BookStore extends Component {
             })
         }
     }
-    updateCategory = (category = 'top selling') => {
+    updateQuery = (query = 'top selling') => {
         this.setState({
             books: [],
             startIndex: 0,
-            query: category,
+            query: query,
             totalItems: 0,
             loading: true,
-            loadingMore: false
+            loadingMore: false,
+            showTopPicks: false
         }, () => {
-            this.fetchBooks(category, 0)
+            this.fetchBooks(query, 0)
         })
     }
     itemPressCallback = (item = {}) => {
@@ -92,12 +93,14 @@ export default class BookStore extends Component {
         )
     }
     header = () => {
+        const { query = '' } = this.state
         return (
-            <View style={{ backgroundColor: '#FFF', width: '100%', elevation: 3 }}>
-                <CategoryFilter
-                    selectedValue={this.state.query}
-                    changeCategory={this.updateCategory} />
-            </View>
+            <SearchBar
+                placeholder="Titles, Authors, ISBN ...."
+                onSubmit={this.updateQuery}
+                onPressTopPicks={() => { this.setState({ showTopPicks: true }) }}
+                query={query}
+            />
         )
     }
     renderItem = ({ item }) => (<BooksListItem
@@ -115,7 +118,7 @@ export default class BookStore extends Component {
         itemPressCallback={this.itemPressCallback}
     />)
     render() {
-        const { books = [], loading = false } = this.state
+        const { books = [], loading = false, showTopPicks = false } = this.state
         return (
             <View style={styles.container}>
                 {
@@ -133,6 +136,16 @@ export default class BookStore extends Component {
                             />
                         )
                 }
+                <Modal
+                    style={styles.modal}
+                    visible={showTopPicks}
+                    onRequestClose={() => { }}
+                    animationType="fade">
+                    <View style={styles.closeButton}>
+                        <Button text="X" onPress={() => { this.setState({ showTopPicks: false }) }} />
+                    </View>
+                    <TopPicks updateQuery={this.updateQuery} />
+                </Modal>
             </View>
         )
     }
@@ -147,5 +160,17 @@ const styles = StyleSheet.create({
         width: '100%',
         alignItems: 'center',
         justifyContent: 'center'
+    },
+    modal: {
+        backgroundColor: '#FFF',
+        flex: 1,
+        position: 'relative'
+    },
+    closeButton: {
+        width: 50,
+        position: 'absolute',
+        top: 16,
+        right: 16,
+        zIndex: 5
     }
 })

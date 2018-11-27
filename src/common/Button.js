@@ -4,11 +4,16 @@ import { SubHeading } from './Typography'
 import RippleFeedback from './RippleFeedback'
 const Button = (props) => {
     const {
-        text = ""
+        text = "",
+        active = false
     } = props
     return (
-        <RippleFeedback style={styles.touchable} onPress={props.onPress}>
-            <SubHeading color="#6b52ae">{text}</SubHeading>
+        <RippleFeedback
+            style={[styles.touchable, active && { backgroundColor: '#6b52ae' }]}
+            onPress={props.onPress}>
+            <SubHeading color={active ? '#FFF' : '#6b52ae'}>
+                {text}
+            </SubHeading>
         </RippleFeedback >
     )
 }

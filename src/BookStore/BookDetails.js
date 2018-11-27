@@ -85,7 +85,7 @@ export default class BookDetails extends Component {
                     {title}
                   </Title>
                   {
-                    authors.length ? <Caption style={{ opacity: 0.5 }}>By {authors.join(', ')}</Caption> : null
+                    authors.length ? <Caption textStyle={{ opacity: 0.5 }}>By {authors.join(', ')}</Caption> : null
                   }
                   {
                     rating ? (
@@ -101,7 +101,7 @@ export default class BookDetails extends Component {
                       <Text>
                         <SubHeading>₹ {price}{' '}</SubHeading>
                         {
-                          (listPrice && price != listPrice) ? <Description style={styles.strikethrough}>
+                          (listPrice && price != listPrice) ? <Description textStyle={styles.strikethrough}>
                             {listPrice}
                           </Description> : null
                         }
@@ -139,7 +139,7 @@ export default class BookDetails extends Component {
                 </View>
                 {
                   subtitle ? (
-                    <Title numberOfLines={3} style={{ paddingBottom: 8 }}>
+                    <Title numberOfLines={3} textStyle={{ paddingBottom: 8 }}>
                       {subtitle}
                     </Title>
                   ) : null
@@ -174,9 +174,9 @@ export default class BookDetails extends Component {
 }
 
 const htmlviewStyles = StyleSheet.create({
-  p: { ...rawStyles.description, lineHeight: 21, marginBottom: 0 },
-  li: { ...rawStyles.description, lineHeight: 21, marginBottom: 0 },
-  b: rawStyles.body2,
+  p: { ...rawStyles.description, lineHeight: 21, marginBottom: 0, fontSize: 15 },
+  li: { ...rawStyles.description, lineHeight: 21, marginBottom: 0, fontSize: 15 },
+  b: { ...rawStyles.body2, fontSize: 15, lineHeight: 21, marginBottom: 0, },
   h1: rawStyles.headline,
   h2: rawStyles.title,
   h3: rawStyles.subheading

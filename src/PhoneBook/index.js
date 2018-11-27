@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { View } from 'react-native'
-import { Loader } from '../common'
+import { Loader, Button } from '../common'
 import Contacts from './Contacts'
 import { parseContacts } from './parser'
 const screenTypes = {
@@ -9,6 +9,11 @@ const screenTypes = {
     me: 'me'
 }
 export default class PhoneBook extends Component {
+    static navigationOptions = ({ navigation = {} }) => {
+        return {
+            title: navigation.getParam('title', 'Contacts')
+        }
+    }
     constructor() {
         super()
         this.state = {
@@ -54,6 +59,9 @@ export default class PhoneBook extends Component {
         this.fetchContacts(0)
     }
 
+    viewContact = (contact = {}) => {
+        this.props.navigation.navigate('profile', { contact })
+    }
     render() {
         const {
             loading = false,
@@ -64,12 +72,36 @@ export default class PhoneBook extends Component {
         return (
             <View style={{ flex: 1 }}>
                 {
+                    loading ? null : (
+                        <View style={{ justifyContent: 'center', alignItems: 'center', width: '100%', flexDirection: 'row', marginVertical: 16 }}>
+                            <Button
+                                text="All Contacts"
+                                onPress={() => this.setState({ screenType: screenTypes.contacts })}
+                                active={screenType == screenTypes.contacts} />
+                            <Button
+                                text="Favourites"
+                                onPress={() => this.setState({ screenType: screenTypes.favourites })}
+                                active={screenType == screenTypes.favourites} />
+                        </View>
+                    )
+                }
+                {
                     loading ? <Loader /> : (
                         (screenType == screenTypes.contacts) ? (
                             <Contacts
                                 contacts={contacts}
                                 fetchMoreContacts={this.fetchMoreContacts}
                                 loadingMore={loadingMore}
+                                viewContact={this.viewContact}
+                                isFav={false}
+                            />
+                        ) : (screenType == screenTypes.favourites) ? (
+                            <Contacts
+                                contacts={contacts}
+                                fetchMoreContacts={this.fetchMoreContacts}
+                                loadingMore={loadingMore}
+                                viewContact={this.viewContact}
+                                isFav={true}
                             />
                         ) : null
 

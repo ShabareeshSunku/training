@@ -4,13 +4,17 @@ import { createStackNavigator, createAppContainer } from 'react-navigation'
 import BookStore from './src/BookStore'
 import BookDetails from './src/BookStore/BookDetails'
 import PhoneBook from './src/PhoneBook'
+import Profile from './src/PhoneBook/Profile'
+
 const RootStack = createStackNavigator(
   {
     home: BookStore,
-    details: BookDetails
+    details: BookDetails,
+    phonebook: PhoneBook,
+    profile: Profile
   },
   {
-    initialRouteName: 'home',
+    initialRouteName: 'phonebook',
     defaultNavigationOptions: {
       headerStyle: {
         backgroundColor: '#6b52ae',
@@ -32,8 +36,7 @@ export default class App extends Component {
         barStyle="light-content"
         backgroundColor="#6b52ae"
       />
-      {/* <AppContainer /> */}
-      <PhoneBook />
+      <AppContainer />
     </SafeAreaView>)
   }
 }

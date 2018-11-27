@@ -10,7 +10,7 @@ const Badge = (props) => {
             {
                 icon ? <Icon color="#FFF" size={20} name={icon} /> : null
             }
-            <Body2 color="#FFF" style={{ marginLeft: 4 }}>{text}</Body2>
+            <Body2 color="#FFF" textStyle={{ marginLeft: 4 }}>{text}</Body2>
         </View>
     )
 }

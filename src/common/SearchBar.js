@@ -4,15 +4,26 @@ import { StyleSheet, TextInput, View, TouchableOpacity } from 'react-native'
 import Icon from 'react-native-vector-icons/MaterialIcons'
 
 export default class SearchBar extends React.Component {
+    constructor() {
+        super()
+        this.state = {
+            value: ''
+        }
+    }
     _handleClearPress = () => {
         this.props.onChangeText('')
     }
-
+    componentDidMount = () => {
+        this.setState({
+            value: this.props.query || ''
+        })
+    }
+    onSubmit = () => {
+        this.props.onSubmit(this.state.value)
+    }
     render() {
         const {
             placeholder,
-            value,
-            trendingSearches = [],
             ...rest
         } = this.props
         return (
@@ -28,13 +39,14 @@ export default class SearchBar extends React.Component {
                     style={styles.input}
                     placeholder={placeholder || ''}
                     placeholderTextColor={'rgba(0,0,0,0.2)'}
-                    selectionColor={'purple'}
                     underlineColorAndroid="transparent"
                     returnKeyType="search"
-                    value={value}
+                    value={this.state.value}
+                    onChangeText={(text) => this.setState({ value: text })}
+                    onSubmitEditing={this.onSubmit}
                     {...rest}
                 />
-                <TouchableOpacity>
+                <TouchableOpacity onPress={this.props.onPressTopPicks}>
                     <Icon
                         borderless
                         style={styles.icon}
@@ -54,7 +66,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         marginVertical: 6,
         marginHorizontal: 8,
-        borderRadius: 1,
+        borderRadius: 4,
         elevation: 4,
         backgroundColor: '#FFF',
         shadowColor: '#000000',

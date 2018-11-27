@@ -3,7 +3,11 @@ import { View, FlatList, StyleSheet, ActivityIndicator } from 'react-native'
 import ContactItem from './ContactItem'
 export default class Contacts extends Component {
     renderItem = ({ item = {} }) => (
-        <ContactItem contact={item} viewContact={() => { }} />
+        <ContactItem
+            contact={item}
+            viewContact={this.props.viewContact}
+            isFav={this.props.isFav}
+        />
     )
 
     footer = () => {
@@ -17,17 +21,29 @@ export default class Contacts extends Component {
         )
     }
     render() {
-        const { contacts = [] } = this.props
+        const { contacts = [], isFav = false } = this.props
+        const flatListProps = {
+            contentContainerStyle: styles.contentContainer,
+            data: contacts,
+            keyExtractor: (item, index) => (item.id + '-' + index),
+            renderItem: this.renderItem,
+            onEndReached: this.props.fetchMoreContacts,
+            onEndReachedThreshold: 0.1,
+            ListFooterComponent: this.footer,
+            key : 'all'
+        }
+        if (isFav) {
+            flatListProps.numColumns = 3
+            flatListProps.contentContainerStyle = {
+                alignItems: 'center'
+            }
+            flatListProps.key = 'fav'
+        }
         return (
             <View style={styles.container}>
                 <FlatList
-                    contentContainerStyle={styles.contentContainer}
-                    data={contacts}
-                    keyExtractor={(item, index) => item.id + '-' + index}
-                    renderItem={this.renderItem}
-                    onEndReached={this.props.fetchMoreContacts}
-                    onEndReachedThreshold={0.1}
-                    ListFooterComponent={this.footer}
+                    {...flatListProps}
+                    style={{ flex: 1 }}
                 />
             </View>
         )

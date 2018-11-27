@@ -32,15 +32,15 @@ const styles = StyleSheet.create({
         overflow: 'hidden'
     },
     large: {
-        height: 150,
-        width: 150,
-        borderRadius: 75,
+        height: 140,
+        width: 140,
+        borderRadius: 70,
         borderWidth: 4
     },
     medium: {
-        height: 120,
-        width: 120,
-        borderRadius: 60,
+        height: 100,
+        width: 100,
+        borderRadius: 50,
         borderWidth: 3
     },
     small: {

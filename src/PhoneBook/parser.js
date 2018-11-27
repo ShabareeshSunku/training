@@ -13,7 +13,7 @@ function parseContact(contact = {}) {
         fullName: contact.name && capitalize(`${contact.name.first || ''} ${contact.name.last || ''}`) || '',
         address: getAddress(contact.location),
         email: contact.email || '',
-        dob: contact.dob,
+        dob: getFormattedDOB(contact.dob),
         phone: contact.phone || '',
         cell: contact.cell || '',
         id: contact.id && contact.id.value || '',
@@ -31,6 +31,11 @@ function getAddress(location = {}) {
         location.postcode || ''
     ]
     return address.join(', ')
+}
+function getFormattedDOB(date = '') {
+    let dob = new Date(date)
+    let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
+    return dob.toLocaleDateString("en-IN", options)
 }
 function capitalize(text) {
     return text.replace(/\b\w/g, function (m) { return m.toUpperCase(); });
