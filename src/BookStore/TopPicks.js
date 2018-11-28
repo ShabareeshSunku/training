@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 import { View, StyleSheet, FlatList } from 'react-native'
 import { RippleFeedback } from '../common'
-import { Title, Headline } from '../common/Typography'
+import { Body2, Title } from '../common/Typography'
 const colors = [
   '#EF5350',
   '#EC407A',
@@ -65,7 +65,7 @@ class Book extends PureComponent {
       <RippleFeedback style={[styles.bookContainer, { backgroundColor: color }]} onPress={this.onPress}>
         <View style={styles.bookEdge} />
         <View style={styles.textContainer}>
-          <Headline textStyle={styles.text} color="#F1F1F1">{query}</Headline>
+          <Body2 textStyle={styles.text} color="#FFFFrr">{query}</Body2>
         </View>
         <View style={styles.bookElevation}>
           {
@@ -85,7 +85,7 @@ export default function TopPicks(props) {
       data={categories}
       keyExtractor={(item, index) => index}
       contentContainerStyle={styles.contentContainer}
-      numColumns={2}
+      numColumns={3}
       horizontal={false}
       ListHeaderComponent={() => <Title>Top Picks</Title>}
       renderItem={({ item, index }) => (
@@ -103,22 +103,22 @@ const styles = StyleSheet.create({
   contentContainer: {
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: 16,
+    padding: 12,
     marginTop : 12
   },
   bookContainer: {
-    height: 180,
-    width: 160,
+    height: 140,
+    width: 110,
     position: 'relative',
     overflow: 'hidden',
     paddingRight: 3,
     borderTopLeftRadius: 6,
     borderTopRightRadius: 4,
     borderBottomLeftRadius: 10,
-    margin: 12
+    margin: 8
   },
   bookEdge: {
-    width: 20,
+    width: 12,
     position: 'absolute',
     left: 0,
     top: 0,
@@ -129,16 +129,15 @@ const styles = StyleSheet.create({
   },
   textContainer: {
     position: 'absolute',
-    left: 15,
+    left: 12,
     justifyContent: 'center',
     alignItems: 'center',
-    paddingHorizontal: 12,
-    height: 140,
-    width: 140
+    paddingHorizontal: 6,
+    height: 115,
+    width: 95
   },
   text: {
     transform: [{ rotateX: '30deg' }],
-    fontWeight: 'bold',
     textAlign: 'center'
   },
   bookElevation: {

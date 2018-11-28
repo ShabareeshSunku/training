@@ -21,7 +21,7 @@ export default class BookStore extends Component {
         }
     }
 
-    fetchBooks = (query = '', startIndex = 0) => {
+    fetchBooks = (query = 'Best Selling', startIndex = 0) => {
         if (!query) {
             return
         }

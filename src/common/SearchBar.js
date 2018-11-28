@@ -44,6 +44,7 @@ export default class SearchBar extends React.Component {
                     value={this.state.value}
                     onChangeText={(text) => this.setState({ value: text })}
                     onSubmitEditing={this.onSubmit}
+                    clearButtonMode="while-editing"
                     {...rest}
                 />
                 <TouchableOpacity onPress={this.props.onPressTopPicks}>

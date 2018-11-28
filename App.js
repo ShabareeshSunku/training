@@ -1,6 +1,11 @@
 import React, { Component } from 'react'
 import { StyleSheet, View, StatusBar } from 'react-native'
-import { createStackNavigator, createBottomTabNavigator, createAppContainer } from 'react-navigation'
+import { 
+  createStackNavigator,
+  createBottomTabNavigator,
+  createAppContainer,
+  getActiveChildNavigationOptions
+} from 'react-navigation'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 import BookStore from './src/BookStore'
 import BookDetails from './src/BookStore/BookDetails'
@@ -45,6 +50,13 @@ const HomeTabs = createBottomTabNavigator(
     },
   }
 );
+
+HomeTabs.navigationOptions = ({ navigation, screenProps }) => {
+  const childOptions = getActiveChildNavigationOptions(navigation, screenProps);
+  return {
+    title: childOptions.title,
+  };
+};
 const RootStack = createStackNavigator(
   {
     home: HomeTabs,
