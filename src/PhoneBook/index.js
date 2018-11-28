@@ -9,10 +9,8 @@ const screenTypes = {
     me: 'me'
 }
 export default class PhoneBook extends Component {
-    static navigationOptions = ({ navigation = {} }) => {
-        return {
-            title: navigation.getParam('title', 'Contacts')
-        }
+    static navigationOptions = {
+        title : "PhoneBook"
     }
     constructor() {
         super()
@@ -60,7 +58,7 @@ export default class PhoneBook extends Component {
     }
 
     viewContact = (contact = {}) => {
-        this.props.navigation.navigate('profile', { contact })
+        this.props.navigation.navigate('phonebookprofile', { contact })
     }
     render() {
         const {
@@ -73,7 +71,7 @@ export default class PhoneBook extends Component {
             <View style={{ flex: 1 }}>
                 {
                     loading ? null : (
-                        <View style={{ justifyContent: 'center', alignItems: 'center', width: '100%', flexDirection: 'row', marginVertical: 16 }}>
+                        <View style={{ justifyContent: 'center', alignItems: 'center', width: '100%', flexDirection: 'row', padding: 16 }}>
                             <Button
                                 text="All Contacts"
                                 onPress={() => this.setState({ screenType: screenTypes.contacts })}

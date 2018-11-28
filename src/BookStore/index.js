@@ -80,7 +80,7 @@ export default class BookStore extends Component {
         })
     }
     itemPressCallback = (item = {}) => {
-        this.props.navigation.navigate('details', item)
+        this.props.navigation.navigate('bookdetails', item)
     }
     footer = () => {
         const { loadingMore = false } = this.state

@@ -11,6 +11,9 @@ import Item from './Item'
 import AddItem from './AddItem'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 export default class TodoList extends Component {
+    static navigationOptions = {
+        title : 'Todo List'
+    }
     constructor() {
         super()
         this.state = {

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { View, StyleSheet, Text } from 'react-native'
+import { View, StyleSheet } from 'react-native'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 import Action from './ActionButton'
+import { SubHeading, Body2, Description } from '../common/Typography'
 const iconColorMap = {
     sport: {
         color: '#9C27B0',
@@ -20,7 +21,7 @@ const iconColorMap = {
         icon: 'medical-bag'
     },
     shopping: {
-        color : '#03A9F4',
+        color: '#03A9F4',
         icon: 'basket'
     }
 }
@@ -45,11 +46,11 @@ export default class Item extends Component {
                 <View style={{ flex: 8 }}>
                     <View style={{ flex: 1, flexDirection: 'row' }}>
                         <View style={styles.textContainer}>
-                            <Text style={styles.heading}>{task}</Text>
-                            <Text style={styles.description}>{venue}</Text>
+                            <SubHeading>{task}</SubHeading>
+                            <Description>{venue}</Description>
                         </View>
                         <View style={styles.timeContainer}>
-                            <Text style={styles.description}>{time}</Text>
+                            <Body2>{time}</Body2>
                         </View>
                     </View>
                     <View style={{ flex: 1 }}>
@@ -99,16 +100,6 @@ const styles = StyleSheet.create({
         flex: 0.3,
         justifyContent: 'center',
         alignItems: 'center'
-    },
-    heading: {
-        fontSize: 16,
-        fontFamily: 'sans-serif-medium',
-        marginBottom: 8
-    },
-    description: {
-        fontSize: 14,
-        fontFamily: 'sans-serif-regular',
-        color: '#666'
     },
     actionRow: {
         flex: 1,

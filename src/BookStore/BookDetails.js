@@ -107,7 +107,7 @@ export default class BookDetails extends Component {
                         }
                         {
                           (price && listPrice && price != listPrice) ? (
-                            <Description color="green">{' '}{Math.floor(listPrice - price)} off</Description>
+                            <Description color="green">{' '}{Math.floor((listPrice - price) / listPrice * 100)}% off</Description>
                           ) : null
                         }
                       </Text>) : null
